@@ -57,9 +57,12 @@
           <li><a href="#">Инструменты</a></li>
           <li><a href="#">Перфораторы</a></li>
         </ul>
-        <h2 class="Perforatori">Перфораторы</h2>
-        <h2 class="invisible">Фильтр товаров</h2>
         <section class="left-side">
+          <h2 class="Perforatori">Перфораторы</h2>
+          <h2 class="invisible">Фильтр товаров</h2>
+          <p class="filter-title">Фильтр</p>
+          <p class="filter-label">Цена</p>
+          <!--Тут будет слайдер-->
           <ul class="manufacturers">
             <p>
                 Производители:
@@ -80,6 +83,19 @@
           <button class="show" type="submit">Показать:</button>
         </section>
         <section class="catalog">
+          <div>
+            <p class="sort-title">Сортировка:</p>
+              <button type="button" class="filters">По цене</button>
+              <button type="button" class="filters">По типу</button>
+              <button type="button" class="filters">По функционалу</button>
+              <!--Текст в классах "incognito будет скрыт"-->
+              <button type="button" class="filters">
+                <img src="img/icon-up-dir.svg">
+              </button>
+            <button type="button" class="filters">
+              <img src="img/icon-down-dir.svg">
+            </button>
+          </div>
           <h2 class="invisible">Каталог товаров</h2>
           <ul class="catalog-list">
             <li>
@@ -212,7 +228,21 @@
           <a href="#">Купить</a>
       </li>
           </ul>
+          <ul class="pagination">
+            <li class="pagination-page">1</li>
+            <li class="pagination-page">2</li>
+            <li class="pagination-page">3</li>
+            <li class="pagination-page">Следующая</li>
+        </ul>
         </section>
+        <h2 class="few-words">Пара слов о перфораторах</h2>
+        <p class="about-drills">Перфоратор — универсальный строительный инструмент. 
+            Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. 
+            Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном 
+            устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </main>
       <footer>
         <section class="footer-top">
