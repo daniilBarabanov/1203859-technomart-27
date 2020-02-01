@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css"/>
@@ -14,7 +14,7 @@
           <a class="techmart-logo" href="index.html"><img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
           <form>
             <img src="img/icon-search.svg" alt="Иконка поиска" width="17" height="17">
-            <input type="search" id="search" name="search" value="Поиск">
+            <input type="search" id="search" name="search" placeholder="Поиск">
           </form>
           <a class="zakladki" href="#"><img src="img/icon-bookmark.svg" alt="Иконка закладки" width="17" height="17"/>Закладки:<span>0</span></a>
           <a class="korzina" href="#"><img src="img/icon-cart.svg" alt="Иконка закладки" width="17" height="17"/>Корзина:<span>0</span></a>
@@ -38,7 +38,13 @@
           </div>
           <div class="enterRegistration">
             <a class="enter" href="#">Войти</a>
-            <a class="registration" href="#">Регистрация</a>      
+            <a class="registration" href="#">Регистрация</a>
+            <div class="invisible">
+              <form class="registration">
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+              </form>
+            </div>      
           </div>
         </section>
           <nav class="header-bottom">
@@ -55,6 +61,7 @@
       </header>
       <main>
         <section class="colorful">
+          <h2 class="invisible">Товары и услуги</h2>
           <ul>
             <li class="newmaterials">
               <article>
@@ -135,6 +142,10 @@
                       <p class="new-price">
                         <b>25500 Р.</b>
                       </p>
+                      <div class="invisible">
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                      </div>
                     </a>
                   </li>
                   <li>
@@ -155,6 +166,10 @@
                       <p class="new-price">
                         <b>15500 Р.</b>
                       </p>
+                      <div class="invisible">
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                      </div>
                     </a>
                   </li>
                   <li>
@@ -175,6 +190,10 @@
                       <p class="new-price">
                         <b>25500 Р.</b>
                       </p>
+                      <div class="invisible">
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                      </div>
                     </a>
                   </li>
                   <li class="newitem">
@@ -194,6 +213,10 @@
                       <p class="new-price">
                         <b>12500 Р.</b>
                       </p>
+                      <div class="invisible">
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                      </div>
                     </a>
                   </li>
                 </ul>
@@ -304,6 +327,18 @@
           </p>
           <a class="route" href="#"><img src="img/map.jpg" width="300" height="158" alt="Как к нам проехать"></a>
           <a class="write-us" href="#">Заблудились? Напишите нам!</a>
+          <div class="invisible form-write-us">
+            <form class="write-us-form">
+              <label for="yourname">Ваше имя:</label><br>
+                <input type="text" name="yourname" id="yourname" placeholder="Имя Фамилия"><br>
+              <label for="youremail">Ваш e-mail:</label><br>
+                <input type="email" name="youremail" id="youremail" placeholder="email@example.com"><br>
+              <label for="yourmail">Текст письма:</label> <br>
+              <textarea name="yourmail" id="yourmail" rows="10" cols="50">
+              В свободной форме
+              </textarea>
+            </form>
+          </div>
         </section>
       </main>
       <footer>
