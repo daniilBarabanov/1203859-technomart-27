@@ -1,0 +1,41 @@
+body {
+margin:0;
+padding:0;
+font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
+font-weight: normal;
+font-size: 13px;
+color:black;
+background-color: white;
+line-height: 24px;
+}
+ul {
+    list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-top, 
+.header-bottom {
+    font-size: 16px;
+    color:white;
+    background-color: #293449;
+}
+.header-top {
+    width: 100%;
+    height: 42;}
+.header-middle {
+    height: 158px;
+}
+.header-bottom{
+    width: 100% - 260px;
+    height: 60px;
+}
+.header-bottom li {
+    display: inline-block;
+}
+.techmart-logo {
+    background-color: #ee3643;
+    width:220px;
+    height: 47px;
+}
