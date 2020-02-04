@@ -14,7 +14,7 @@
         <section class="header-top">
           <h1 class="invisible">Техномарт</h1>
           <a class="techmart-logo" href="index.html"><img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
-          <form>
+          <form class="searchclass" action="https://echo.htmlacademy.ru" method="POST">
             <img src="img/icon-search.svg" alt="Иконка поиска" width="17" height="17">
             <input type="search" id="search" name="search" value="Поиск">
           </form>
@@ -72,11 +72,11 @@
           <h2 class="invisible">Фильтр товаров</h2>
           <p class="filter-title">Фильтр</p>
           <label for="rangeprice">Цена:</label>
-          <form class="pricerange">
+          <form class="pricerange" action="https://echo.htmlacademy.ru" method="POST">
             <input  type="range" name="rangeprice" id="rangeprice" min="0" max="30000" step="1">
           </form>
           <p>0 - 30000</p>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Производители:</legend>
           <ul class="manufacturers">
