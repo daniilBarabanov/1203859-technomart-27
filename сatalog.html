@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Cuprum%7CPT+Sans&display=swap" rel="stylesheet">
         <title>
             Техномарт
         </title>
     </head>
-    <body>
+    <body class="catalog-page">
       <header class="header">
         <section class="header-top">
           <h1 class="invisible">Техномарт</h1>
@@ -38,7 +40,12 @@
           </div>
           <div class="enterRegistration">
             <a class="enter" href="#">Войти</a>
-            <a class="registration" href="#">Регистрация</a>      
+            <a class="registration" href="#">Регистрация</a>
+            <!--
+              <ul class="entered-user-nav">
+                <li> <a href="#">Мои заказы</a></li>
+                <li> <a href="#">Личный кабинет</a></li>
+            -->   
           </div>
         </section>
           <nav class="header-bottom">
@@ -64,26 +71,66 @@
           <h2 class="Perforatori">Перфораторы</h2>
           <h2 class="invisible">Фильтр товаров</h2>
           <p class="filter-title">Фильтр</p>
-          <p class="filter-label">Цена</p>
-          <!--Тут будет слайдер-->
+          <label for="rangeprice">Цена:</label>
+          <form class="pricerange">
+            <input  type="range" name="rangeprice" id="rangeprice" min="0" max="30000" step="1">
+          </form>
+          <p>0 - 30000</p>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Производители:</legend>
           <ul class="manufacturers">
-            <p>
-                Производители:
-            </p>
-            <li>Bosch</li>
-            <li>Интерскол</li>
-            <li>Makita</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
+            <li>
+              <input type="checkbox" name="bosch" id="bosch" checked>
+              <label for="bosch">
+              Bosch
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="interskol" id="interskol">
+              <label for="interskol">
+              Интерскол
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="makita" checked>
+              <label for="makita">
+              Makita
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="dewalt">
+              <label for="dewalt">
+              Dewalt
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="hitachi">
+              <label for="hitachi">
+              Hitachi
+              </label>
+            </li>
           </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
           <ul class="Nutrition">
-            <p>
-                Питание:
-            </p>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
+            <li>
+              <input type="radio" name="pitanie" value="accum" id="accum">
+              <label for="accum">
+              Аккумуляторные
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="pitanie" value="net" id="net">
+              <label for="net">
+              Сетевые
+              </label>
+            </li>
           </ul>
+          </fieldset>
           <button class="show" type="submit">Показать:</button>
+        </form>
         </section>
         <section class="catalog">
           <div>
@@ -91,7 +138,6 @@
               <button type="button" class="filters">По цене</button>
               <button type="button" class="filters">По типу</button>
               <button type="button" class="filters">По функционалу</button>
-              <!--Текст в классах "incognito будет скрыт"-->
               <button type="button" class="filters">
                 <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
               </button>
@@ -114,7 +160,10 @@
                 <p class="old-price">22500p</p>
                 <!--OLD PRICE LINE THORUGH-->
                 <p class="new-price">15500р</p>
-                <a href="#">Купить</a>
+                <div class="invisible">
+                  <a class="button-buy" href="#">Купить</a>
+                  <a class="button-bookmarks" href="#">В закладки</a>
+                </div>
             </li>
             <li>
                <h3>
@@ -129,7 +178,10 @@
                <p class="old-price">30500p</p>
                <!--OLD PRICE LINE THORUGH-->
                <p class="new-price">25500р</p>
-               <a href="#">Купить</a>
+               <div class="invisible">
+                <a class="button-buy" href="#">Купить</a>
+                <a class="button-bookmarks" href="#">В закладки</a>
+              </div>
            </li>
            <li>
                <h3>
@@ -142,7 +194,10 @@
                    <img src="img/item1.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
                </a>
                <p class="new-price">12500р</p>
-               <a href="#">Купить</a>
+               <div class="invisible">
+                <a class="button-buy" href="#">Купить</a>
+                <a class="button-bookmarks" href="#">В закладки</a>
+              </div>
            </li>
            <li>
                <h3>
@@ -157,7 +212,10 @@
                <p class="old-price">22500p</p>
                <!--OLD PRICE LINE THORUGH-->
                <p class="new-price">15500р</p>
-               <a href="#">Купить</a>
+               <div class="invisible">
+                <a class="button-buy" href="#">Купить</a>
+                <a class="button-bookmarks" href="#">В закладки</a>
+              </div>
            </li>
            <li>
               <h3>
@@ -172,7 +230,10 @@
               <p class="old-price">30500p</p>
               <!--OLD PRICE LINE THORUGH-->
               <p class="new-price">25500р</p>
-              <a href="#">Купить</a>
+              <div class="invisible">
+                <a class="button-buy" href="#">Купить</a>
+                <a class="button-bookmarks" href="#">В закладки</a>
+              </div>
           </li>
           <li>
               <h3>
@@ -185,7 +246,10 @@
                   <img src="img/item1.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
               </a>
               <p class="new-price">12500р</p>
-              <a href="#">Купить</a>
+              <div class="invisible">
+                <a class="button-buy" href="#">Купить</a>
+                <a class="button-bookmarks" href="#">В закладки</a>
+              </div>
           </li>
           <li>
            <h3>
@@ -200,7 +264,10 @@
            <p class="old-price">22500p</p>
            <!--OLD PRICE LINE THORUGH-->
            <p class="new-price">15500р</p>
-           <a href="#">Купить</a>
+           <div class="invisible">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmarks" href="#">В закладки</a>
+          </div>
        </li>
        <li>
           <h3>
@@ -215,7 +282,10 @@
           <p class="old-price">30500p</p>
           <!--OLD PRICE LINE THORUGH-->
           <p class="new-price">25500р</p>
-          <a href="#">Купить</a>
+          <div class="invisible">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmarks" href="#">В закладки</a>
+          </div>
       </li>
       <li>
           <h3>
@@ -228,7 +298,10 @@
               <img src="img/item1.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
           </a>
           <p class="new-price">12500р</p>
-          <a href="#">Купить</a>
+          <div class="invisible">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmarks" href="#">В закладки</a>
+          </div>
       </li>
           </ul>
           <ul class="pagination">
@@ -249,6 +322,7 @@
       </main>
       <footer>
         <section class="footer-top">
+          <h2 class="invisible">Верхняя часть футера</h2>
           <a class="techmart-logo" href="index.html"><img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
           <div class="adressnumber">
             <p>
@@ -273,6 +347,7 @@
           </div>
         </section>
         <section class="footer-bottom">
+          <h2 class="invisible">Нижняя часть футера</h2>
           <p class="copyrights">
             © 2010–2019 Компания «Техномарт» <br>
             Все права защищены
