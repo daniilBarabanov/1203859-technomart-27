@@ -1,41 +1,138 @@
 body {
-margin:0;
-padding:0;
-font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
-font-weight: normal;
-font-size: 13px;
-color:black;
-background-color: white;
-line-height: 24px;
-}
-ul {
-    list-style: none;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.header-top, 
-.header-bottom {
-    font-size: 16px;
-    color:white;
-    background-color: #293449;
-}
-.header-top {
-    width: 100%;
-    height: 42;}
-.header-middle {
-    height: 158px;
-}
-.header-bottom{
-    width: 100% - 260px;
-    height: 60px;
-}
-.header-bottom li {
-    display: inline-block;
-}
-.techmart-logo {
-    background-color: #ee3643;
-    width:220px;
-    height: 47px;
-}
+    margin:0;
+    padding:0;
+    font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color:black;
+    background-color: white;
+    line-height: 24px;
+    }
+    input, p, textarea {
+        padding: 0;
+        margin:0;
+    }
+    img {
+        max-width: 100%;
+        height:auto;
+        border:none;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .header {
+        height: 320px;
+    }
+    .header-top, 
+    .header-bottom {
+        font-size: 16px;
+        color:white;
+        background-color: #293449;
+    }
+    .header-top {
+        width: 100%;
+    }
+    .header-middle {
+        height: 158px;
+    }
+    .techmart-logo {
+        display: inline-block;
+        background-color: #ee3643;
+        width:220px;
+        height: 42px;
+        box-shadow: 0 5px 0 0 #b52933;
+        vertical-align: center;
+        text-align: center;
+        margin-left:130px;
+    }
+    .techmart-logo img {
+        margin-top: 13px;
+        margin-bottom: 15px;
+    }
+    .techmart-logo:hover {
+        background-color: #ca2c37;
+    }
+    .techmart-logo:active {
+        background:#ba2732;
+    }
+    .searchform {
+        position: relative;
+        display:inline-block;
+        width: 270px;
+        background-color: #293449;
+        color: #fff;
+        font-size: 17px;
+        line-height: 18px;
+        font-weight: 400;
+        font-style: normal;
+        float: left;
+    }
+    .searchform input {
+        background-color: #293449;
+        border:none;
+    }
+    .searchform input:hover {
+        background: #212a3a;
+        border:none
+    }
+    .tomakeanorder {
+        background-color: #63a63e;
+        width: 150px;
+        min-height: 42px;
+        height: 42px;
+    }
+    .tomakeanorder:hover {
+        background:#5fbb2d;
+    }
+    .tomakeanorder:active{
+        background:#518534;
+    }
+    .header-middle {
+        background-color:#f4f7f9;
+    }
+    .header-info {
+        font-size: 16px; 
+        font-style: italic;
+        line-height: 23px;
+        color: #ee3643;
+        width: 196px;
+        height: 60px;
+    }
+    .number {
+        font-size:21px;
+        color:#ee3643;
+        font-family: 'Cuprum', sans-serif;
+    }
+    .adress {
+        font-size: 14px;
+        text-align: center;
+        color: #32425c;
+        width: 250px;
+        height: 13px;
+    }
+    .enterRegistration {
+        font-size: 21px;
+        color:black;
+    }
+    
+    
+    
+    
+    .header-bottom {
+        margin-left: 130px;
+        margin-right: 130px;
+        box-shadow:0 5px 0 0 #293449;
+        height: 60px;
+    }
+    .header-bottom li {
+        font-size: 17px;
+        color:white;
+        display: inline-block;
+        margin:0 59px;
+        margin-top: 22px;
+        mar
+    }
