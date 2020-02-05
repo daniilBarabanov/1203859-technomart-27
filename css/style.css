@@ -39,6 +39,7 @@ body {
     }
     .header-top {
         width: 100%;
+        line-height: 18px;
     }
     .techmart-logo {
         display: inline-block;
@@ -116,6 +117,7 @@ body {
         color:#ee3643;
         font-family: "Cuprum", "Arial", sans-serif;
         line-height: 1;
+        line-height: 21px;
     }
     .adress {
         font-size: 14px;
@@ -123,10 +125,12 @@ body {
         color: #32425c;
         width: 250px;
         height: 13px;
+        line-height: 24px;
     }
     .enterRegistration {
         font-size: 21px;
         color:black;
+        line-height: 21px;
     }
     /*Оформление нижней части шапки*/
     .header-bottom {
@@ -155,19 +159,122 @@ body {
     /*!!!Тут разметка секций из main!!!*/
     
     /*Оформление цветных блоков из main */
-
-
-
+    .pushka a {
+        width: 220px;
+        height: 38px;
+        font-size: 14px;
+        font-family: "Cuprum", "Arial", sans-serif;
+        background-color: #ee3643;
+        color:#ffffff;
+        float:left;
+        text-align: center;
+        padding-top:14px;
+    }
+    .colorful h3 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align:left;
+        color: #ffffff;
+    }
+    article a {
+        background-color: black;
+        opacity: 0.1;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        width: 135px;
+        height: 38px;
+    }
+    .slider-drills {
+        font-size: 36px;
+        line-height: 36px;
+        text-align: left;
+        color: white;
+    }
     /*Оформление популярных товаров */
-
-
-
+    .popgoods h2 {
+        font-size: 30px;
+        line-height: 30px;
+        color: #32425c;
+    }
+    .popgoodshref {
+        width: 253px;
+        height: 38px;
+        font-size: 14px;
+        font-family: "Cuprum", "Arial", sans-serif;
+        background-color: #ee3643;
+        color:#ffffff;
+        float:left;
+        text-align: center;
+        padding-top:14px;
+        border-radius: 4px;
+    }
+    .new-price {
+        background-image: url("img/red-button.svg");
+        color:white;
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 17px;
+        line-height: 18px;
+        font-weight: bold;
+    }
+    .old-price {
+        text-decoration: line-through;
+        color:#a9a9a9;
+    }
+    .popgoodfirm, .popgoodname {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-weight: bold;
+    }
     /*Оформление популярных производителей */
-
-
+    .popmanufacturers h2 {
+        font-size: 30px;
+        line-height: 30px;
+        color: #32425c;
+    }
+    .popmanufacturershref {
+        width: 253px;
+        height: 38px;
+        font-size: 14px;
+        font-family: "Cuprum", "Arial", sans-serif;
+        background-color: #ee3643;
+        color:#ffffff;
+        float:left;
+        text-align: center;
+        padding-top:14px;
+        border-radius: 4px;  
+    }
 
     /*Оформление сервисов */
-
+    .services h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .services h3  {
+        color:#32425c;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .services p {
+        font-size: 13px;
+        line-height: 24px;
+        font-family: "PT Sans", "Arial", sans-serif;
+    }
+    .button-a {
+        width: 195px;
+        height: 38px;
+        font-size: 14px;
+        font-family: "Cuprum", "Arial", sans-serif;
+        background-color: #ee3643;
+        color:#ffffff;
+        float:left;
+        text-align: center;
+        padding-top:14px;
+        border-radius: 4px;  
+    }
 
 
     /*Оформление секции о компании и контакты */
@@ -277,3 +384,23 @@ body {
     .feedback a:hover {
         text-decoration: underline;
     }
+
+
+    /* Разметка каталога начинается тут */
+    .breadcrumbscatalog {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .perforators {
+        font-size: 30px;
+        line-height: 30px;
+        color: #32425c;
+    }
+    .filters {
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: left;
+        color: rgba(0,0,0, 0.3);
+    }
+    

@@ -67,10 +67,22 @@
           <li><a href="#">Инструменты</a></li>
           <li><a href="#">Перфораторы</a></li>
         </ul>
+        <div>
+          <p class="filter-sort">Фильтр</p>
+          <p class="filter-sort">Сортировка:</p>
+            <button type="button" class="filters">По цене</button>
+            <button type="button" class="filters">По типу</button>
+            <button type="button" class="filters">По функционалу</button>
+            <button type="button" class="filters-button">
+              <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+            </button>
+          <button type="button" class="filters-button">
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+          </button>
+        </div>
         <section class="left-side">
-          <h2 class="Perforatori">Перфораторы</h2>
+          <h2 class="Perforators">Перфораторы</h2>
           <h2 class="invisible">Фильтр товаров</h2>
-          <p class="filter-title">Фильтр</p>
           <label for="rangeprice">Цена:</label>
           <form class="pricerange" action="https://echo.htmlacademy.ru" method="POST">
             <input  type="range" name="rangeprice" id="rangeprice" min="0" max="30000" step="1">
@@ -133,18 +145,6 @@
         </form>
         </section>
         <section class="catalog">
-          <div>
-            <p class="sort-title">Сортировка:</p>
-              <button type="button" class="filters">По цене</button>
-              <button type="button" class="filters">По типу</button>
-              <button type="button" class="filters">По функционалу</button>
-              <button type="button" class="filters">
-                <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
-              </button>
-            <button type="button" class="filters">
-              <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
-            </button>
-          </div>
           <h2 class="invisible">Каталог товаров</h2>
           <ul class="catalog-list">
             <li>
