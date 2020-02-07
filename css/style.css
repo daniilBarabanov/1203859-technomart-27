@@ -25,6 +25,24 @@ body {
       text-decoration: none;
       color: inherit;
     }
+    button {
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .invisible {
+        position: absolute; 
+        overflow: hidden; 
+        clip: rect(0 0 0 0); 
+        height: 1px; width: 1px; 
+        margin: -1px; padding: 0; border: 0;
+    }
+    fieldset {
+        border:0 none;
+    }
     /*!!!Оформление шапка сайта!!!*/
 
     /*Оформление верхней части шапки*/
@@ -40,9 +58,10 @@ body {
     .header-top {
         width: 100%;
         line-height: 18px;
+        display:flex;
+        height: 42px;
     }
     .techmart-logo {
-        display: inline-block;
         background-color: #ee3643;
         width:220px;
         height: 42px;
@@ -62,8 +81,7 @@ body {
         background:#ba2732;
     }
     .searchform {
-        position: relative;
-        display:inline-block;
+        display:flex;
         width: 270px;
         background-color: #293449;
         color: #fff;
@@ -71,23 +89,58 @@ body {
         line-height: 18px;
         font-weight: 400;
         font-style: normal;
+        margin-left:17px;
     }
+    ::-webkit-input-placeholder {color:#ffffff;}
+    ::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+    :-moz-placeholder           {color:#ffffff;} /* Firefox 18- */
+    :-ms-input-placeholder      {color:#ffffff;}
+
+
     .searchform input {
         background-color: #293449;
         border:none;
+        width:270px;
     }
     .searchform input:hover {
         background: #212a3a;
-        border:none
+        border:none;
     }
-    .header-top-menu li {
-        display: inline-block;
+    .searchform img {
+        margin-top: 12px;
+        margin-right:3px;
+        margin-bottom:13px
+    }
+
+    /* Ссылка в шапке */
+    .header-top ul {
+        display: flex;
+        align-items: center;
+        margin-left: 17px;
+        padding: 0;
+        color: #ffffff;
+        font-size: 17px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .header-top li {
+        display: flex;
+        align-items: center;
+        width: 152px;
+        height: 42px;
+    }
+    .header-top-menu img {
+        margin-right:13px;
     }
     .tomakeanorder {
+        display:flex;
+        align-items: center;
+        text-align: center;
         background-color: #63a63e;
         width: 150px;
         min-height: 42px;
         height: 42px;
+        justify-content: center;
     }
     .tomakeanorder:hover {
         background:#5fbb2d;
@@ -210,12 +263,18 @@ body {
         border-radius: 4px;
     }
     .new-price {
-        background-image: url("img/red-button.svg");
-        color:white;
-        font-family: "PT Sans", "Arial", sans-serif;
+        background-image: url('../img/red-button.svg');
+        width: 141px;
+        height: 38px;
+        object-fit: contain;
+        font-family: "PTSans", "Arial", sans-serif;
         font-size: 17px;
-        line-height: 18px;
         font-weight: bold;
+        line-height: 18px;
+        text-align: center;
+        color: #ffffff;
+        margin: auto;
+        line-height: 35px;
     }
     .old-price {
         text-decoration: line-through;
@@ -386,6 +445,7 @@ body {
 
 
     /* Разметка каталога начинается тут */
+    /*Оформление breadcrumbs */
     .breadcrumbscatalog {
         font-size: 13px;
         line-height: 18px;
@@ -394,6 +454,17 @@ body {
         font-size: 30px;
         line-height: 30px;
         color: #32425c;
+        background-color:#f2f6f8;
+        text-decoration: dotted;
+        text-decoration: red;
+    }
+    .filters-block {
+        width:700px;
+        height: 38px;
+        display:flex;
+        justify-content: space-between;
+        background-color:#f7f3ec;
+        margin:0 auto;
     }
     .filters {
         font-family: "PT Sans", "Arial", sans-serif;
@@ -402,4 +473,140 @@ body {
         text-align: left;
         color: rgba(0,0,0, 0.3);
     }
+    .filters:hover {
+        color:black;
+    }
+    .filters:active {
+        color: #ee3643;
+    }
+    .filter-title {
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 13px;
+    }
+    .filter-sort {
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 17px;
+        line-height: 30px;
+        color:#000000;
+        font-weight: bold;
+    }
+    /*Офоромление фильтров */
+    .left-side{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:220px;
+        text-transform: uppercase;
+    }
+    .left-side li {
+        font-family: "PTSans", "Arial", sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+    }
+    fieldset input {
+        margin-left:-51px;
+    }
+    fieldset legend {
+        margin-left:-12px;
+    }
+
+    .show {
+        width: 140px;
+        height: 38px;
+        border: solid 1px #e5e5e5;
+        background-color: #ffffff;
+        font-size: 13px;
+        font-family: "PTSans", "Arial", sans-serif;
+        line-height: 18px;
+        text-align: center;
+    }
+
+
+    /*Оформляем карточки товаров */
+    .catalog-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 706px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 25px;
+        margin-left: 371px;
+        list-style: none;
+      }
     
+      .catalog-item {
+        width: 220px;
+        height: 318px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        border: solid 1px #e5e5e5;
+      }
+      .catalog-item span {
+        width: 155px;
+        height: 33px;
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+      .catalog-item:nth-child(3n) {
+        margin-right: 0;
+      }
+      .new-price:nth-child(3n) {
+        margin-top: 43px;
+    }
+    /*Оформление пагинации */
+
+    .pagination {
+        display:flex;
+        flex-direction: row;
+        margin-left: 370px;
+    }
+    .pagination li {
+        width: 38px;
+        height: 38px;
+        border: solid 1px #e5e5e5;
+        background-color:#ffffff;
+        font-size: 13px;
+        line-height: 37px;
+        text-align: center;
+        font-family: "PT Sans", "Arial", sans-serif;
+        margin-right: 10px;
+        border-radius: 3px;
+    }
+    .pagination li:last-child {
+        width:140px;
+        height: 38px;
+        text-transform: uppercase;
+    }
+    .pagination li:hover {
+        border: solid 1px #bdc6ca;
+    }
+    .pagination li:active {
+        border: solid 1px #ee3643;
+    }
+    /*Разметка Пары слов */
+    .some-words {
+        width: 1200px;
+        height: 261px;
+        background-color:#f4f7f9;
+    }
+    .few-words{
+        margin-left: 130px;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-top:67px;
+    }
+    .about-drills {
+        margin-left: 130px;
+        font-family: "PTSans", "Arial", sans-serif;
+        font-size: 13px;
+        line-height: 24px;
+        text-align: left;
+    }
