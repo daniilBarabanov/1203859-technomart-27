@@ -1,900 +1,1087 @@
-/*Общие стили*/ 
+/*Общие стили*/
+
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
     font-weight: normal;
     font-size: 13px;
-    color:black;
+    color: black;
     background-color: white;
     line-height: 24px;
-    }
-    input, p, textarea {
-        padding: 0;
-        margin:0;
-    }
-    img {
-        max-width: 100%;
-        height:auto;
-        border:none;
-    }
-    ul {
-        list-style: none;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    button {
-        padding: 0;
-        border: none;
-        font: inherit;
-        color: inherit;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    .invisible {
-        position: absolute; 
-        overflow: hidden; 
-        clip: rect(0 0 0 0); 
-        height: 1px; width: 1px; 
-        margin: -1px; padding: 0; border: 0;
-    }
-    fieldset {
-        border:0 none;
-    }
-    /*!!!Оформление шапка сайта!!!*/
+}
 
-    /*Оформление верхней части шапки*/
-    .header {
-        height: 320px;
-        background-color:#f4f7f9;
-    }
-    .header-top, 
-    .header-bottom {
-        font-size: 17px;
-        color:white;
-        background-color: #293449;
-    }
-    .header-top {
-        width: 100%;
-        line-height: 18px;
-        display:flex;
-        height: 42px;
-    }
-    .techmart-logo {
-        background-color: #ee3643;
-        width:220px;
-        height: 42px;
-        box-shadow: 0 5px 0 0 #b52933;
-        vertical-align: center;
-        text-align: center;
-        margin-left:130px;
-    }
-    .techmart-logo img {
-        margin-top: 13px;
-        margin-bottom: 15px;
-    }
-    .techmart-logo:hover {
-        background-color: #ca2c37;
-    }
-    .techmart-logo:active {
-        background:#ba2732;
-    }
-    .searchform {
-        display:flex;
-        width: 270px;
-        background-color: #293449;
-        color: #fff;
-        font-size: 17px;
-        line-height: 18px;
-        font-weight: 400;
-        font-style: normal;
-        margin-left:17px;
-    }
-    ::-webkit-input-placeholder {color:#ffffff;}
-    ::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
-    :-moz-placeholder           {color:#ffffff;} /* Firefox 18- */
-    :-ms-input-placeholder      {color:#ffffff;}
+input,
+p,
+textarea {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.invisible {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+fieldset {
+    border: 0 none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 
-    .searchform input {
-        background-color: #293449;
-        border:none;
-        width:270px;
-    }
-    .searchform input:hover {
-        background: #212a3a;
-        border:none;
-    }
-    .searchform img {
-        margin-top: 12px;
-        margin-right:3px;
-        margin-bottom:13px
-    }
-
-    /* Ссылки в шапке */
-    .header-top ul {
-        display: flex;
-        align-items: center;
-        margin-left: 17px;
-        padding: 0;
-        color: #ffffff;
-        font-size: 17px;
-        line-height: 18px;
-        text-align: center;
-    }
-    .header-top li {
-        display: flex;
-        align-items: center;
-        width: 152px;
-        height: 42px;
-    }
-    .header-top-menu img {
-        margin-right:13px;
-    }
-    .tomakeanorder {
-        display:flex;
-        align-items: center;
-        text-align: center;
-        background-color: #63a63e;
-        width: 150px;
-        min-height: 42px;
-        height: 42px;
-        justify-content: center;
-    }
-    .tomakeanorder:hover {
-        background:#5fbb2d;
-    }
-    .tomakeanorder:active{
-        background:#518534;
-    }
-    /*Оформление средней части шапки */
-    .header-middle {
-        display: flex;
-        background-color:#f4f7f9;
-        height: 158px;
-        align-items: center;
-    }
-    .header-info {
-        font-family: "Cuprum", "Arial", sans-serif;
-        font-size: 16px; 
-        font-style: italic;
-        line-height: 23px;
-        color: #ee3643;
-        float: left;
-        margin-left:183px;
-        margin-top:49px;
-        margin-bottom:44px;
-        width: 196px;
-        height: 60px;
-        text-align: left;
-    }
-    .header-numberadress {
-        margin-top:46px;
-        height: 68px;
-    }
-    .number {
-        font-size:21px;
-        color:#ee3643;
-        font-family: "Cuprum", "Arial", sans-serif;
-        line-height: 21px;
-        margin-left:71px;
-        width:270px;
-    }
-    .number img {
-        margin-right: 40px;
-    }
-    .adress {
-        font-size: 14px;
-        text-align: center;
-        color: #32425c;
-        width: 250px;
-        height: 13px;
-        line-height: 24px;
-        margin-left:81px;
-    }
-    .enterRegistration {
-        justify-content: space-between;
-        width: 281px;
-        display: flex;
-        font-size: 21px;
-        color:black;
-        line-height: 21px;
-    }
-    .enterRegistration img {
-        margin-left:83px;
-        margin-right: 14px;
-    }
-    .enter {
-        margin-right: 62px;
-        background-color: #ffffff;
-    }
-    .registration {
-        background-color: #ffffff;
-    }
-    /*Оформление нижней части шапки*/
-    .header-bottom {
-        margin-left: 130px;
-        margin-right: 130px;
-        box-shadow:0 5px 0 0 #293449;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-    }
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-    }
-    .header-bottom li {
-        color:white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-right: 60px;
-    }
-    .header-bottom a {
-        display:flex;
-        font-size: 17px;
-        text-decoration: none;
-        color:#fff;
-    }
-    .header-bottom a:hover {
-        background-color:#293449;
-    }
+/*!!!Оформление шапка сайта!!!*/
 
 
-    /*!!!Тут разметка секций из main!!!*/
-    
-    /*Оформление цветных блоков из main */
-    .colorful {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 130px;
-        margin-right: 130px;
-    }
-    .colorful-ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .colorful-ul-2 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .colorful-ul li {
-        width: 300px;
-        height: 123px;
-        margin-right:20px;
-    }
-    .colorful-ul-2 li {
-        width: 300px;
-        height: 123px;
-        margin-bottom: 20px;
-    }
-    .newmaterials {
-        background-color: #ffbf47;
-    }
-    .newmaterials h3 {
-        margin-top:26px;
-        margin-left: 23px;
-    }
-    .newmaterials a {
-        width: 135px;
-        height: 38px;
-        opacity: 0.1;
-        background-color: #000000;
-    }
-    .newmaterials img{
-        object-fit: contain;
-        padding:-10px -10x 
-    }
-    .newtools{
-        background-color: #3bbce3;
-    }
-    .newtools h3 {
-        margin-top:26px;
-        margin-left: 23px;
-    }
-    .newtech {
-        background-color: #dc91d8;
-    }
-    .newtech h3 {
-        margin-top:26px;
-        margin-left: 23px;
-    }
-    .newsales {
-        background-color: #8ed78f;
-    }
-    .newsales h3 {
-        margin-top:26px;
-        margin-left: 23px;
-    }
-    .newdelivery {
-        background-color: #ffc047;
-    }
-    .newdelivery h3 {
-        margin-top:26px;
-        margin-left: 23px;
-    }
+/*Оформление верхней части шапки*/
+
+.header {
+    height: 320px;
+    background-color: #f4f7f9;
+}
+
+.header-top,
+.header-bottom {
+    font-size: 17px;
+    color: white;
+    background-color: #293449;
+}
+
+.header-top {
+    width: 100%;
+    line-height: 18px;
+    display: flex;
+    height: 42px;
+}
+
+.techmart-logo {
+    background-color: #ee3643;
+    width: 220px;
+    height: 42px;
+    box-shadow: 0 5px 0 0 #b52933;
+    vertical-align: center;
+    text-align: center;
+    margin-left: 130px;
+}
+
+.techmart-logo img {
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+
+.techmart-logo:hover {
+    background-color: #ca2c37;
+}
+
+.techmart-logo:active {
+    background: #ba2732;
+}
+
+.searchform {
+    display: flex;
+    width: 270px;
+    background-color: #293449;
+    color: #fff;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 17px;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+}
 
 
+/* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #ffffff;
+}
 
 
+/* Firefox 18- */
 
-    .pushka a {
-        width: 220px;
-        height: 38px;
-        font-size: 14px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        background-color: #ee3643;
-        color:#ffffff;
-        float:left;
-        text-align: center;
-        padding-top:14px;
-    }
-    .colorful h3 {
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 30px;
-        text-align:left;
-        color: #ffffff;
-    }
-    article a {
-        background-color: black;
-        opacity: 0.1;
-        color: white;
-        font-size: 14px;
-        text-align: center;
-        width: 135px;
-        height: 38px;
-    }
-    .slider-drills {
-        font-size: 36px;
-        line-height: 36px;
-        text-align: left;
-        color: white;
-    }
-    /*Оформление популярных товаров */
-    .popgoodsdiv {
-        display: flex;
-        flex-direction: row;
-        margin-left: 130px;
-        margin-right: 130px;
-        background-color: #f9f5f0;
-        width: 940px;
-        height: 89px;
-        align-items: center;
-    }
-    .populargoods {
-        font-size: 30px;
-        line-height: 30px;
-        color: #32425c;
-        margin-left: 30px;
-        margin-right: 373px;
-    }
-    .popgoodshref {
-        width: 253px;
-        height: 38px;
-        font-size: 14px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        background-color: #ee3643;
-        color:#ffffff;
-        float:left;
-        text-align: center;
-        padding-top:14px;
-        border-radius: 4px;
-    }
-    .popcatalog {
-        display: flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-        width: 1000px;
-        height: 318px;
-        display: flex;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 21px;
-        margin-left: 130px;
-        list-style: none;
-    }
-    .popcatalog li {
-        width: 220px;
-        height: 318px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        text-align: center;
-        background-color: #ffffff;
-        border: solid 1px #e5e5e5;
-    }
-    .new-price {
-        background-image: url('../img/red-button.svg');
-        width: 141px;
-        height: 38px;
-        object-fit: contain;
-        font-family: "PTSans", "Arial", sans-serif;
-        font-size: 17px;
-        font-weight: bold;
-        line-height: 18px;
-        text-align: center;
-        color: #ffffff;
-        margin: auto;
-        line-height: 35px;
-    }
-    .old-price {
-        text-decoration: line-through;
-        color:#a9a9a9;
-    }
-    .popgoodfirm, .popgoodname {
-        font-size: 18px;
-        line-height: 20px;
-        text-align: center;
-        font-family: "PT Sans", "Arial", sans-serif;
-        font-weight: bold;
-    }
-    /*Оформление популярных производителей */
-    .popmanutop {
-        display: flex;
-        background-color: #f9f5f0;
-    }
-    .popgoodfirms {
-        font-size: 30px;
-        line-height: 30px;
-        color: #32425c;
-        margin-left:160px;
-    }
-    .popmanufacturershref {
-        width: 253px;
-        height: 38px;
-        font-size: 14px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        background-color: #ee3643;
-        color:#ffffff;
-        float:left;
-        text-align: center;
-        padding-top:14px;
-        border-radius: 4px;
-        margin-left: 373px;  
-    }
-    .topmanufacturers {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 130px;
-        margin-right: 130px;
-        width:960px;
-    }
-    .topmanufacturers li {
-        width: 220px;
-        height: 145px;
-        margin-right: 20px;
-        margin-top: 20px;
-    }
-    .topmanufacturers img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin:auto;
-    }
-    /*Оформление сервисов */
-    .services {
-        background-color: #f4f7f9;
-        height: 522px;
-    }
-    .services h2 {
-        font-size: 30px;
-        line-height: 30px;
-        margin-left:131px;
-        padding-top:68px;
-    }
-    .services-description {
-        margin-left: 130px;
-        margin-top: 38px;
-    }
-    .services h3  {
-        color:#32425c;
-        font-size: 36px;
-        line-height: 36px;
-    }
-    .services p {
-        font-size: 13px;
-        line-height: 24px;
-        font-family: "PT Sans", "Arial", sans-serif;
-    }
-    .services-slider {
-        display: flex;
-        flex-direction: row;
-    }
-    .services-slider-1 {
-        margin-top: 74px;
-        margin-left: 130px;
-        margin-right: 220px;
-    }
-    .services-ul h3 {
-        margin-bottom: 34px;
-    }
-    .button-a {
-        width: 195px;
-        height: 38px;
-        font-size: 14px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        background-color: #ee3643;
-        color:#ffffff;
-        float:left;
-        text-align: center;
-        padding-top:14px;
-        border-radius: 4px;  
-    }
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.searchform input {
+    background-color: #293449;
+    border: none;
+    width: 270px;
+}
+
+.searchform input:hover {
+    background: #212a3a;
+    border: none;
+}
+
+.searchform img {
+    margin-top: 12px;
+    margin-right: 3px;
+    margin-bottom: 13px
+}
 
 
-    /*Оформление секции о компании и контакты */
-    .company-contacts {
-        display: flex;
-        justify-content: space-between;
-    }
-    .about-us h2 {
-        font-size:30px;
-        color:#000000;
-        font-family: "Cuprum", "Arial", sans-serif;
-        margin-top: 82px;
-        font-weight: normal;
-        margin-left:132px;
-    }
-    .about-us p {
-        font-size:13px;
-        font-family: "PTSans", "Arial", sans-serif;
-    }
-    .about-us-p1 {
-        margin-left: 130px;
-        margin-bottom: 36px;
-    }
-    .about-us-p2 {
-        margin-left: 130px;
-    }
-    .companies {
-        margin-left:130px;
-    }
-    .companies li {
-        font-size: 18px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        font-weight: normal;
-        line-height: 20px;
-    }
-    .details {
-        width: 220px;
-        height: 38px;
-        font-size: 14px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        background-color: #ee3643;
-        color:#ffffff;
-        float:left;
-        text-align: center;
-        padding-top:14px;
-        border-radius: 4px;
-        margin-left:130px;
-        margin-top:37px;
-        margin-bottom: 86px;
-    }
-    .details a {
-        font-size:14px;
-        padding-top:14px;
-    }
-    .contacts h2 {
-        font-size:30px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        margin-right:309px;
-        margin-top: 82px;
-        font-weight: normal;
-        text-transform: uppercase;
-    }
-    .contacts p {
-        font-size: 13px;
-        font-family: "PTSans", "Arial", sans-serif;
-        text-align: left;
-        margin-bottom: 36px;
-    }
-    .contacts img {
-        margin-bottom: 10px;
-    }
-    .write-us {
-        width: 220px;
-        height: 38px;
-        font-size: 14px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        background-color: #ee3643;
-        color:#ffffff;
-        float:left;
-        text-align: center;
-        padding-top:14px;
-        border-radius: 4px;
-    }
+/* Ссылки в шапке */
 
-    /* Оформление подвала сайта */
-    
-    /*Оформление верхней части сайта */
-    .techmart-logo-bottom {
-        background-color: #ee3643;
-        width:220px;
-        height: 42px;
-        box-shadow: 0 5px 0 0 #b52933;
-        vertical-align: center;
-        text-align: center;
-        margin-left:130px;
-    }
-    .techmart-logo-bottom img {
-        margin-top: 13px;
-        margin-bottom: 15px;
-    }
-    .techmart-logo-bottom:hover {
-        background-color: #ca2c37;
-    }
-    .techmart-logo-bottom:active {
-        background:#ba2732;
-    }
+.header-top ul {
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+    padding: 0;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+}
 
-    .footer-top {
-        width:100%;
-        height:193px;
-        background-color: #32425c;
-        display:flex;
-    }
-    .shit {
-        display: flex;
-        flex-direction: column;
-    }
-    .adressnumber {
-        font-family: "Cuprum", "Arial", sans-serif;
-        color:#ffffff;
-        font-size: 18px;
-        margin-left:133px;
-        margin-top:32px;
-        margin-bottom: 53px;
-    }
-    .nav-foot-one {
-        display: flex;
-        justify-content: space-between;
-        margin-top:25px;
-    }
-    .nav-foot-one li{
-        display: flex;
-        font-family: "Cuprum", "Arial", sans-serif;
-        color:#f1f5f7;
-        font-size: 18px;
-        margin-right: 60px;
-    }
-    .nav-foot-two {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 25px;
-    }
-    .nav-foot-two li{
-        display: flex;
-        font-family: "Cuprum", "Arial", sans-serif;
-        color:#ffd180;
-        font-size: 18px;
-        margin-right: 60px;
-    }
-    .nav-foot-two li:first-child {
-        margin-left: 18px;
-    }
+.header-top li {
+    display: flex;
+    align-items: center;
+    width: 152px;
+    height: 42px;
+}
 
-    /*Оформление нижней части футера */
-    .footer-bottom{
-        width:100%;
-        height: 107px;
-        background-color:#293449;
-        display: flex;
-    }
-    .copyrights {
-        font-family: "Cuprum", "Arial", sans-serif;
-        color:#ffffff;
-        font-size: 16px;
-        margin-top:39px;
-        margin-left: 131px;
-        margin-right: 161px;
-    }
-    .social ul{
-        display:flex;
-        flex-direction: row;
-        margin-top:43px;
-        margin-right: 119px;
-    }
-    .social li {
-        margin-right:3px;
-    }
-    .feedback {
-        display: flex;
-        font-size: 16px;
-        line-height: 18px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        color:#ffffff;
-    }
-    .feedback-p {
-        margin-top:40px;
-        margin-right: 53px;
-        margin-bottom: 35px;
-    }
-    .developed {
-        margin-top:39px;
-        margin-bottom: 34px;
-        margin-right: 145px;
-    }
-    .feedback a {
-        display: flex;
-        font-size: 16px;
-        line-height: 18px;
-        font-family: "Cuprum", "Arial", sans-serif;
-        color:#ffd180;
-    }
-    .feedback a:hover {
-        text-decoration: underline;
-    }
+.header-top-menu img {
+    margin-right: 13px;
+}
+
+.tomakeanorder {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #63a63e;
+    width: 150px;
+    min-height: 42px;
+    height: 42px;
+    justify-content: center;
+}
+
+.tomakeanorder:hover {
+    background: #5fbb2d;
+}
+
+.tomakeanorder:active {
+    background: #518534;
+}
 
 
+/*Оформление средней части шапки */
 
-    /* Разметка каталога начинается тут */
-    /*Оформление breadcrumbs */
-    .breadcrumbscatalog {
-        font-size: 13px;
-        line-height: 18px;
-    }
-    .perforators {
-        font-size: 30px;
-        line-height: 30px;
-        color: #32425c;
-        background-color:#f2f6f8;
-        text-decoration: dotted;
-        text-decoration: red;
-    }
-    .filters-block {
-        width:700px;
-        height: 38px;
-        display:flex;
-        justify-content: space-between;
-        background-color:#f7f3ec;
-        margin:0 auto;
-    }
-    .filters {
-        font-family: "PT Sans", "Arial", sans-serif;
-        font-size: 13px;
-        line-height: 18px;
-        text-align: left;
-        color: rgba(0,0,0, 0.3);
-    }
-    .filters:hover {
-        color:black;
-    }
-    .filters:active {
-        color: #ee3643;
-    }
-    .filter-title {
-        font-family: "PT Sans", "Arial", sans-serif;
-        font-size: 13px;
-    }
-    .filter-sort {
-        font-family: "PT Sans", "Arial", sans-serif;
-        font-size: 17px;
-        line-height: 30px;
-        color:#000000;
-        font-weight: bold;
-    }
-    /*Офоромление фильтров */
-    .left-side{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width:220px;
-        text-transform: uppercase;
-    }
-    .left-side li {
-        font-family: "PTSans", "Arial", sans-serif;
-        font-size: 15px;
-        line-height: 20px;
-        text-align: left;
-    }
-    fieldset input {
-        margin-left:-51px;
-    }
-    fieldset legend {
-        margin-left:-12px;
-    }
+.header-middle {
+    display: flex;
+    background-color: #f4f7f9;
+    height: 158px;
+    align-items: center;
+}
 
-    .show {
-        width: 140px;
-        height: 38px;
-        border: solid 1px #e5e5e5;
-        background-color: #ffffff;
-        font-size: 13px;
-        font-family: "PTSans", "Arial", sans-serif;
-        line-height: 18px;
-        text-align: center;
-    }
+.header-info {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+    color: #ee3643;
+    float: left;
+    margin-left: 183px;
+    margin-top: 49px;
+    margin-bottom: 44px;
+    width: 196px;
+    height: 60px;
+    text-align: left;
+}
+
+.header-numberadress {
+    margin-top: 46px;
+    height: 68px;
+}
+
+.number {
+    font-size: 21px;
+    color: #ee3643;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 21px;
+    margin-left: 71px;
+    width: 270px;
+}
+
+.number img {
+    margin-right: 40px;
+}
+
+.adress {
+    font-size: 14px;
+    text-align: center;
+    color: #32425c;
+    width: 250px;
+    height: 13px;
+    line-height: 24px;
+    margin-left: 81px;
+}
+
+.enterRegistration {
+    justify-content: space-between;
+    width: 281px;
+    display: flex;
+    font-size: 21px;
+    color: black;
+    line-height: 21px;
+}
+
+.enterRegistration img {
+    margin-left: 83px;
+    margin-right: 14px;
+}
+
+.enter {
+    margin-right: 62px;
+    background-color: #ffffff;
+}
+
+.registration {
+    background-color: #ffffff;
+}
 
 
-    /*Оформляем карточки товаров */
-    .catalog-list {
-        display: flex;
-        flex-wrap: wrap;
-        width: 706px;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 25px;
-        margin-left: 371px;
-        list-style: none;
-      }
-    
-      .catalog-item {
-        width: 220px;
-        height: 318px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        text-align: center;
-        background-color: #ffffff;
-        border: solid 1px #e5e5e5;
-      }
-      .catalog-item span {
-        width: 155px;
-        height: 33px;
-        font-family: "PT Sans", "Arial", sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 20px;
-    }
-      .catalog-item:nth-child(3n) {
-        margin-right: 0;
-      }
-      .new-price:nth-child(3n) {
-        margin-top: 43px;
-    }
-    /*Оформление пагинации */
+/*Оформление нижней части шапки*/
 
-    .pagination {
-        display:flex;
-        flex-direction: row;
-        margin-left: 370px;
-    }
-    .pagination li {
-        width: 38px;
-        height: 38px;
-        border: solid 1px #e5e5e5;
-        background-color:#ffffff;
-        font-size: 13px;
-        line-height: 37px;
-        text-align: center;
-        font-family: "PT Sans", "Arial", sans-serif;
-        margin-right: 10px;
-        border-radius: 3px;
-    }
-    .pagination li:last-child {
-        width:140px;
-        height: 38px;
-        text-transform: uppercase;
-    }
-    .pagination li:hover {
-        border: solid 1px #bdc6ca;
-    }
-    .pagination li:active {
-        border: solid 1px #ee3643;
-    }
-    /*Разметка Пары слов */
-    .some-words {
-        width: 1200px;
-        height: 261px;
-        background-color:#f4f7f9;
-    }
-    .few-words{
-        margin-left: 130px;
-        font-size: 30px;
-        line-height: 30px;
-        text-align: left;
-        text-transform: uppercase;
-        font-weight: normal;
-        padding-top:67px;
-    }
-    .about-drills {
-        margin-left: 130px;
-        font-family: "PTSans", "Arial", sans-serif;
-        font-size: 13px;
-        line-height: 24px;
-        text-align: left;
-    }
+.header-bottom {
+    margin-left: 130px;
+    margin-right: 130px;
+    box-shadow: 0 5px 0 0 #293449;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header-bottom li {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.header-bottom a {
+    display: flex;
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-bottom a:hover {
+    background-color: #293449;
+}
+
+
+/*!!!Тут разметка секций из main!!!*/
+
+
+/*Оформление цветных блоков из main */
+
+.colorful {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.colorful-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colorful-ul-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.colorful-ul li {
+    width: 300px;
+    height: 123px;
+    margin-right: 20px;
+}
+
+.colorful-ul-2 li {
+    width: 300px;
+    height: 123px;
+    margin-bottom: 20px;
+}
+
+.newmaterials {
+    background-color: #ffbf47;
+}
+
+.newmaterials h3 {
+    margin-top: 26px;
+    margin-left: 23px;
+}
+
+.newmaterials a {
+    width: 135px;
+    height: 38px;
+    opacity: 0.1;
+    background-color: #000000;
+}
+
+.newmaterials img {
+    object-fit: contain;
+    padding: -10px -10x
+}
+
+.newtools {
+    background-color: #3bbce3;
+}
+
+.newtools h3 {
+    margin-top: 26px;
+    margin-left: 23px;
+}
+
+.newtech {
+    background-color: #dc91d8;
+}
+
+.newtech h3 {
+    margin-top: 26px;
+    margin-left: 23px;
+}
+
+.newsales {
+    background-color: #8ed78f;
+}
+
+.newsales h3 {
+    margin-top: 26px;
+    margin-left: 23px;
+}
+
+.newdelivery {
+    background-color: #ffc047;
+}
+
+.newdelivery h3 {
+    margin-top: 26px;
+    margin-left: 23px;
+}
+
+.pushka a {
+    width: 220px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #ee3643;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.colorful h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    color: #ffffff;
+}
+
+article a {
+    background-color: black;
+    opacity: 0.1;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 135px;
+    height: 38px;
+}
+
+.slider-drills {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    color: white;
+}
+
+
+/*Оформление популярных товаров */
+
+.popgoodsdiv {
+    display: flex;
+    flex-direction: row;
+    margin-left: 130px;
+    margin-right: 130px;
+    background-color: #f9f5f0;
+    width: 940px;
+    height: 89px;
+    align-items: center;
+}
+
+.populargoods {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    margin-left: 30px;
+    margin-right: 373px;
+}
+
+.popgoodshref {
+    width: 253px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #ee3643;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+    border-radius: 4px;
+}
+
+.popcatalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 318px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 21px;
+    margin-left: 130px;
+    list-style: none;
+}
+
+.popcatalog li {
+    width: 220px;
+    height: 318px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+}
+
+.new-price {
+    background-image: url('../img/red-button.svg');
+    width: 141px;
+    height: 38px;
+    object-fit: contain;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    line-height: 35px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #a9a9a9;
+}
+
+.popgoodfirm,
+.popgoodname {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+}
+
+
+/*Оформление популярных производителей */
+
+.popmanutop {
+    display: flex;
+    background-color: #f9f5f0;
+}
+
+.popgoodfirms {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    margin-left: 160px;
+}
+
+.popmanufacturershref {
+    width: 253px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #ee3643;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+    border-radius: 4px;
+    margin-left: 373px;
+}
+
+.topmanufacturers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-right: 130px;
+    width: 960px;
+}
+
+.topmanufacturers li {
+    width: 220px;
+    height: 145px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.topmanufacturers img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/*Оформление сервисов */
+
+.services {
+    background-color: #f4f7f9;
+    height: 522px;
+}
+
+.services h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 131px;
+    padding-top: 68px;
+}
+
+.services-description {
+    margin-left: 130px;
+    margin-top: 38px;
+}
+
+.services h3 {
+    color: #32425c;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.services p {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.services-slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-slider-1 {
+    margin-top: 74px;
+    margin-left: 130px;
+    margin-right: 220px;
+}
+
+.services-ul h3 {
+    margin-bottom: 34px;
+}
+
+.button-a {
+    width: 195px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #ee3643;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+    border-radius: 4px;
+}
+
+
+/*Оформление секции о компании и контакты */
+
+.company-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us h2 {
+    font-size: 30px;
+    color: #000000;
+    font-family: "Cuprum", "Arial", sans-serif;
+    margin-top: 82px;
+    font-weight: normal;
+    margin-left: 132px;
+}
+
+.about-us p {
+    font-size: 13px;
+    font-family: "PTSans", "Arial", sans-serif;
+}
+
+.about-us-p1 {
+    margin-left: 130px;
+    margin-bottom: 36px;
+}
+
+.about-us-p2 {
+    margin-left: 130px;
+}
+
+.companies {
+    margin-left: 130px;
+}
+
+.companies li {
+    font-size: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.details {
+    width: 220px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #ee3643;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+    border-radius: 4px;
+    margin-left: 130px;
+    margin-top: 37px;
+    margin-bottom: 86px;
+}
+
+.details a {
+    font-size: 14px;
+    padding-top: 14px;
+}
+
+.contacts h2 {
+    font-size: 30px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    margin-right: 309px;
+    margin-top: 82px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.contacts p {
+    font-size: 13px;
+    font-family: "PTSans", "Arial", sans-serif;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.contacts img {
+    margin-bottom: 10px;
+}
+
+.write-us {
+    width: 220px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #ee3643;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+    border-radius: 4px;
+}
+
+
+/* Оформление подвала сайта */
+
+
+/*Оформление верхней части сайта */
+
+.techmart-logo-bottom {
+    background-color: #ee3643;
+    width: 220px;
+    height: 42px;
+    box-shadow: 0 5px 0 0 #b52933;
+    vertical-align: center;
+    text-align: center;
+    margin-left: 130px;
+}
+
+.techmart-logo-bottom img {
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+
+.techmart-logo-bottom:hover {
+    background-color: #ca2c37;
+}
+
+.techmart-logo-bottom:active {
+    background: #ba2732;
+}
+
+.footer-top {
+    width: 100%;
+    height: 193px;
+    background-color: #32425c;
+    display: flex;
+}
+
+.shit {
+    display: flex;
+    flex-direction: column;
+}
+
+.adressnumber {
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 133px;
+    margin-top: 32px;
+    margin-bottom: 53px;
+}
+
+.nav-foot-one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.nav-foot-one li {
+    display: flex;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: #f1f5f7;
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+.nav-foot-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.nav-foot-two li {
+    display: flex;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: #ffd180;
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+.nav-foot-two li:first-child {
+    margin-left: 18px;
+}
+
+
+/*Оформление нижней части футера */
+
+.footer-bottom {
+    width: 100%;
+    height: 107px;
+    background-color: #293449;
+    display: flex;
+}
+
+.copyrights {
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 39px;
+    margin-left: 131px;
+    margin-right: 161px;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 43px;
+    margin-right: 119px;
+}
+
+.social li {
+    margin-right: 3px;
+}
+
+.feedback {
+    display: flex;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: #ffffff;
+}
+
+.feedback-p {
+    margin-top: 40px;
+    margin-right: 53px;
+    margin-bottom: 35px;
+}
+
+.developed {
+    margin-top: 39px;
+    margin-bottom: 34px;
+    margin-right: 145px;
+}
+
+.feedback a {
+    display: flex;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: #ffd180;
+}
+
+.feedback a:hover {
+    text-decoration: underline;
+}
+
+
+/* Разметка каталога начинается тут */
+
+
+/*Оформление breadcrumbs */
+
+.breadcrumbscatalog {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.perforators {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    background-color: #f2f6f8;
+    text-decoration: dotted;
+    text-decoration: red;
+}
+
+.filters-block {
+    width: 700px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f3ec;
+    margin: 0 auto;
+}
+
+.filters {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.filters:hover {
+    color: black;
+}
+
+.filters:active {
+    color: #ee3643;
+}
+
+.filter-title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+}
+
+.filter-sort {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/*Офоромление фильтров */
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    text-transform: uppercase;
+}
+
+.left-side li {
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+}
+
+fieldset input {
+    margin-left: -51px;
+}
+
+fieldset legend {
+    margin-left: -12px;
+}
+
+.show {
+    width: 140px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    font-size: 13px;
+    font-family: "PTSans", "Arial", sans-serif;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+/*Оформляем карточки товаров */
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 706px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-left: 371px;
+    list-style: none;
+}
+
+.catalog-item {
+    width: 220px;
+    height: 318px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+}
+
+.catalog-item span {
+    width: 155px;
+    height: 33px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.new-price:nth-child(3n) {
+    margin-top: 43px;
+}
+
+
+/*Оформление пагинации */
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    margin-left: 370px;
+}
+
+.pagination li {
+    width: 38px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    font-size: 13px;
+    line-height: 37px;
+    text-align: center;
+    font-family: "PT Sans", "Arial", sans-serif;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.pagination li:last-child {
+    width: 140px;
+    height: 38px;
+    text-transform: uppercase;
+}
+
+.pagination li:hover {
+    border: solid 1px #bdc6ca;
+}
+
+.pagination li:active {
+    border: solid 1px #ee3643;
+}
+
+
+/*Разметка Пары слов */
+
+.some-words {
+    width: 1200px;
+    height: 261px;
+    background-color: #f4f7f9;
+}
+
+.few-words {
+    margin-left: 130px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 67px;
+}
+
+.about-drills {
+    margin-left: 130px;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+}
