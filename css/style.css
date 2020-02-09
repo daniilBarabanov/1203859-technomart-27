@@ -48,6 +48,7 @@ body {
     /*Оформление верхней части шапки*/
     .header {
         height: 320px;
+        background-color:#f4f7f9;
     }
     .header-top, 
     .header-bottom {
@@ -112,7 +113,7 @@ body {
         margin-bottom:13px
     }
 
-    /* Ссылка в шапке */
+    /* Ссылки в шапке */
     .header-top ul {
         display: flex;
         align-items: center;
@@ -150,8 +151,10 @@ body {
     }
     /*Оформление средней части шапки */
     .header-middle {
+        display: flex;
         background-color:#f4f7f9;
         height: 158px;
+        align-items: center;
     }
     .header-info {
         font-family: "Cuprum", "Arial", sans-serif;
@@ -160,16 +163,27 @@ body {
         line-height: 23px;
         color: #ee3643;
         float: left;
-        margin: 49px 0 40px 52px;
+        margin-left:183px;
+        margin-top:49px;
+        margin-bottom:44px;
         width: 196px;
         height: 60px;
         text-align: left;
+    }
+    .header-numberadress {
+        margin-top:46px;
+        height: 68px;
     }
     .number {
         font-size:21px;
         color:#ee3643;
         font-family: "Cuprum", "Arial", sans-serif;
         line-height: 21px;
+        margin-left:71px;
+        width:270px;
+    }
+    .number img {
+        margin-right: 40px;
     }
     .adress {
         font-size: 14px;
@@ -178,11 +192,26 @@ body {
         width: 250px;
         height: 13px;
         line-height: 24px;
+        margin-left:81px;
     }
     .enterRegistration {
+        justify-content: space-between;
+        width: 281px;
+        display: flex;
         font-size: 21px;
         color:black;
         line-height: 21px;
+    }
+    .enterRegistration img {
+        margin-left:83px;
+        margin-right: 14px;
+    }
+    .enter {
+        margin-right: 62px;
+        background-color: #ffffff;
+    }
+    .registration {
+        background-color: #ffffff;
     }
     /*Оформление нижней части шапки*/
     .header-bottom {
@@ -190,15 +219,23 @@ body {
         margin-right: 130px;
         box-shadow:0 5px 0 0 #293449;
         height: 60px;
+        display: flex;
+        flex-direction: row;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
     }
     .header-bottom li {
         color:white;
-        display: inline-block;
-        margin:0 59px;
-        margin-top: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 60px;
     }
     .header-bottom a {
-        display:block;
+        display:flex;
         font-size: 17px;
         text-decoration: none;
         color:#fff;
@@ -211,6 +248,81 @@ body {
     /*!!!Тут разметка секций из main!!!*/
     
     /*Оформление цветных блоков из main */
+    .colorful {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+    .colorful-ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .colorful-ul-2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .colorful-ul li {
+        width: 300px;
+        height: 123px;
+        margin-right:20px;
+    }
+    .colorful-ul-2 li {
+        width: 300px;
+        height: 123px;
+        margin-bottom: 20px;
+    }
+    .newmaterials {
+        background-color: #ffbf47;
+    }
+    .newmaterials h3 {
+        margin-top:26px;
+        margin-left: 23px;
+    }
+    .newmaterials a {
+        width: 135px;
+        height: 38px;
+        opacity: 0.1;
+        background-color: #000000;
+    }
+    .newmaterials img{
+        object-fit: contain;
+        padding:-10px -10x 
+    }
+    .newtools{
+        background-color: #3bbce3;
+    }
+    .newtools h3 {
+        margin-top:26px;
+        margin-left: 23px;
+    }
+    .newtech {
+        background-color: #dc91d8;
+    }
+    .newtech h3 {
+        margin-top:26px;
+        margin-left: 23px;
+    }
+    .newsales {
+        background-color: #8ed78f;
+    }
+    .newsales h3 {
+        margin-top:26px;
+        margin-left: 23px;
+    }
+    .newdelivery {
+        background-color: #ffc047;
+    }
+    .newdelivery h3 {
+        margin-top:26px;
+        margin-left: 23px;
+    }
+
+
+
+
+
     .pushka a {
         width: 220px;
         height: 38px;
@@ -245,10 +357,22 @@ body {
         color: white;
     }
     /*Оформление популярных товаров */
-    .popgoods h2 {
+    .popgoodsdiv {
+        display: flex;
+        flex-direction: row;
+        margin-left: 130px;
+        margin-right: 130px;
+        background-color: #f9f5f0;
+        width: 940px;
+        height: 89px;
+        align-items: center;
+    }
+    .populargoods {
         font-size: 30px;
         line-height: 30px;
         color: #32425c;
+        margin-left: 30px;
+        margin-right: 373px;
     }
     .popgoodshref {
         width: 253px;
@@ -261,6 +385,28 @@ body {
         text-align: center;
         padding-top:14px;
         border-radius: 4px;
+    }
+    .popcatalog {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        width: 1000px;
+        height: 318px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 21px;
+        margin-left: 130px;
+        list-style: none;
+    }
+    .popcatalog li {
+        width: 220px;
+        height: 318px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        border: solid 1px #e5e5e5;
     }
     .new-price {
         background-image: url('../img/red-button.svg');
@@ -288,10 +434,15 @@ body {
         font-weight: bold;
     }
     /*Оформление популярных производителей */
-    .popmanufacturers h2 {
+    .popmanutop {
+        display: flex;
+        background-color: #f9f5f0;
+    }
+    .popgoodfirms {
         font-size: 30px;
         line-height: 30px;
         color: #32425c;
+        margin-left:160px;
     }
     .popmanufacturershref {
         width: 253px;
@@ -303,13 +454,42 @@ body {
         float:left;
         text-align: center;
         padding-top:14px;
-        border-radius: 4px;  
+        border-radius: 4px;
+        margin-left: 373px;  
     }
-
+    .topmanufacturers {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 130px;
+        margin-right: 130px;
+        width:960px;
+    }
+    .topmanufacturers li {
+        width: 220px;
+        height: 145px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .topmanufacturers img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+    }
     /*Оформление сервисов */
+    .services {
+        background-color: #f4f7f9;
+        height: 522px;
+    }
     .services h2 {
         font-size: 30px;
         line-height: 30px;
+        margin-left:131px;
+        padding-top:68px;
+    }
+    .services-description {
+        margin-left: 130px;
+        margin-top: 38px;
     }
     .services h3  {
         color:#32425c;
@@ -320,6 +500,18 @@ body {
         font-size: 13px;
         line-height: 24px;
         font-family: "PT Sans", "Arial", sans-serif;
+    }
+    .services-slider {
+        display: flex;
+        flex-direction: row;
+    }
+    .services-slider-1 {
+        margin-top: 74px;
+        margin-left: 130px;
+        margin-right: 220px;
+    }
+    .services-ul h3 {
+        margin-bottom: 34px;
     }
     .button-a {
         width: 195px;
@@ -336,20 +528,37 @@ body {
 
 
     /*Оформление секции о компании и контакты */
+    .company-contacts {
+        display: flex;
+        justify-content: space-between;
+    }
     .about-us h2 {
         font-size:30px;
         color:#000000;
         font-family: "Cuprum", "Arial", sans-serif;
+        margin-top: 82px;
+        font-weight: normal;
+        margin-left:132px;
     }
     .about-us p {
         font-size:13px;
         font-family: "PTSans", "Arial", sans-serif;
     }
+    .about-us-p1 {
+        margin-left: 130px;
+        margin-bottom: 36px;
+    }
+    .about-us-p2 {
+        margin-left: 130px;
+    }
+    .companies {
+        margin-left:130px;
+    }
     .companies li {
         font-size: 18px;
         font-family: "Cuprum", "Arial", sans-serif;
         font-weight: normal;
-        line-height: 1.11;
+        line-height: 20px;
     }
     .details {
         width: 220px;
@@ -362,56 +571,111 @@ body {
         text-align: center;
         padding-top:14px;
         border-radius: 4px;
+        margin-left:130px;
+        margin-top:37px;
+        margin-bottom: 86px;
     }
     .details a {
         font-size:14px;
         padding-top:14px;
     }
-
     .contacts h2 {
         font-size:30px;
         font-family: "Cuprum", "Arial", sans-serif;
+        margin-right:309px;
+        margin-top: 82px;
+        font-weight: normal;
+        text-transform: uppercase;
     }
     .contacts p {
         font-size: 13px;
         font-family: "PTSans", "Arial", sans-serif;
         text-align: left;
+        margin-bottom: 36px;
+    }
+    .contacts img {
+        margin-bottom: 10px;
     }
     .write-us {
-        width:300px;
+        width: 220px;
         height: 38px;
-        background-color: #ee3643;
-        color:#ffffff;
         font-size: 14px;
         font-family: "Cuprum", "Arial", sans-serif;
-        padding-top:14px;
-        float:right;
+        background-color: #ee3643;
+        color:#ffffff;
+        float:left;
         text-align: center;
+        padding-top:14px;
         border-radius: 4px;
     }
 
     /* Оформление подвала сайта */
     
     /*Оформление верхней части сайта */
+    .techmart-logo-bottom {
+        background-color: #ee3643;
+        width:220px;
+        height: 42px;
+        box-shadow: 0 5px 0 0 #b52933;
+        vertical-align: center;
+        text-align: center;
+        margin-left:130px;
+    }
+    .techmart-logo-bottom img {
+        margin-top: 13px;
+        margin-bottom: 15px;
+    }
+    .techmart-logo-bottom:hover {
+        background-color: #ca2c37;
+    }
+    .techmart-logo-bottom:active {
+        background:#ba2732;
+    }
+
     .footer-top {
         width:100%;
-        height:197px;
+        height:193px;
         background-color: #32425c;
+        display:flex;
+    }
+    .shit {
+        display: flex;
+        flex-direction: column;
     }
     .adressnumber {
         font-family: "Cuprum", "Arial", sans-serif;
         color:#ffffff;
         font-size: 18px;
+        margin-left:133px;
+        margin-top:32px;
+        margin-bottom: 53px;
+    }
+    .nav-foot-one {
+        display: flex;
+        justify-content: space-between;
+        margin-top:25px;
     }
     .nav-foot-one li{
-        display: inline-block;
+        display: flex;
         font-family: "Cuprum", "Arial", sans-serif;
         color:#f1f5f7;
+        font-size: 18px;
+        margin-right: 60px;
+    }
+    .nav-foot-two {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
     }
     .nav-foot-two li{
-        display: inline-block;
+        display: flex;
         font-family: "Cuprum", "Arial", sans-serif;
         color:#ffd180;
+        font-size: 18px;
+        margin-right: 60px;
+    }
+    .nav-foot-two li:first-child {
+        margin-left: 18px;
     }
 
     /*Оформление нижней части футера */
@@ -419,21 +683,44 @@ body {
         width:100%;
         height: 107px;
         background-color:#293449;
+        display: flex;
     }
     .copyrights {
         font-family: "Cuprum", "Arial", sans-serif;
         color:#ffffff;
         font-size: 16px;
+        margin-top:39px;
+        margin-left: 131px;
+        margin-right: 161px;
+    }
+    .social ul{
+        display:flex;
+        flex-direction: row;
+        margin-top:43px;
+        margin-right: 119px;
+    }
+    .social li {
+        margin-right:3px;
     }
     .feedback {
-        display: inline-block;
+        display: flex;
         font-size: 16px;
         line-height: 18px;
         font-family: "Cuprum", "Arial", sans-serif;
         color:#ffffff;
     }
+    .feedback-p {
+        margin-top:40px;
+        margin-right: 53px;
+        margin-bottom: 35px;
+    }
+    .developed {
+        margin-top:39px;
+        margin-bottom: 34px;
+        margin-right: 145px;
+    }
     .feedback a {
-        display: inline-block;
+        display: flex;
         font-size: 16px;
         line-height: 18px;
         font-family: "Cuprum", "Arial", sans-serif;
@@ -442,6 +729,7 @@ body {
     .feedback a:hover {
         text-decoration: underline;
     }
+
 
 
     /* Разметка каталога начинается тут */
