@@ -62,6 +62,11 @@ fieldset {
     margin: 0 auto;
 }
 
+.container-2 {
+    display: flex;
+    margin: 0 auto;
+}
+
 
 /*!!!Оформление шапка сайта!!!*/
 
@@ -285,12 +290,13 @@ fieldset {
 /*Оформление нижней части шапки*/
 
 .header-bottom {
-    margin-left: 130px;
-    margin-right: 130px;
-    box-shadow: 0 5px 0 0 #293449;
-    height: 60px;
     display: flex;
     flex-direction: row;
+    box-shadow: 0 5px 0 0 #293449;
+    height: 60px;
+    font-size: 17px;
+    color: white;
+    background-color: #32425c;
 }
 
 .navigation {
@@ -303,8 +309,10 @@ fieldset {
     color: white;
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: space-between;
     margin-right: 60px;
+    padding: 0 31px;
 }
 
 .header-bottom a {
@@ -312,9 +320,18 @@ fieldset {
     font-size: 17px;
     text-decoration: none;
     color: #fff;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 60px;
 }
 
-.header-bottom a:hover {
+.header-bottom li:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
     background-color: #293449;
 }
 
@@ -468,6 +485,7 @@ article a {
     color: #32425c;
     margin-left: 30px;
     margin-right: 373px;
+    text-transform: uppercase;
 }
 
 .popgoodshref {
@@ -541,7 +559,10 @@ article a {
 
 .popmanutop {
     display: flex;
+    align-items: center;
     background-color: #f9f5f0;
+    height: 89px;
+    margin-bottom: 7px;
 }
 
 .popgoodfirms {
@@ -549,6 +570,7 @@ article a {
     line-height: 30px;
     color: #32425c;
     margin-left: 160px;
+    text-transform: uppercase;
 }
 
 .popmanufacturershref {
@@ -568,16 +590,31 @@ article a {
 .topmanufacturers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-left: 130px;
     margin-right: 130px;
-    width: 960px;
+    width: 970px;
 }
 
 .topmanufacturers li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 145px;
     margin-right: 20px;
     margin-top: 20px;
+    border: solid 1px #eaeaea;
+}
+
+.topmanufacturers li:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.topmanufacturers li:active {
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+    opacity: 0.3;
 }
 
 .topmanufacturers img {
@@ -747,21 +784,20 @@ article a {
 /* Оформление подвала сайта */
 
 
-/*Оформление верхней части сайта */
+/*Оформление верхней части шапки */
 
 .techmart-logo-bottom {
     background-color: #ee3643;
     width: 220px;
-    height: 42px;
+    height: 63px;
     box-shadow: 0 5px 0 0 #b52933;
     vertical-align: center;
     text-align: center;
-    margin-left: 130px;
 }
 
 .techmart-logo-bottom img {
-    margin-top: 13px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .techmart-logo-bottom:hover {
@@ -788,7 +824,6 @@ article a {
     font-family: "Cuprum", "Arial", sans-serif;
     color: #ffffff;
     font-size: 18px;
-    margin-left: 133px;
     margin-top: 32px;
     margin-bottom: 53px;
 }
@@ -807,6 +842,10 @@ article a {
     margin-right: 60px;
 }
 
+.nav-foot-one li:hover {
+    text-decoration: underline;
+}
+
 .nav-foot-two {
     display: flex;
     justify-content: space-between;
@@ -819,6 +858,11 @@ article a {
     color: #ffd180;
     font-size: 18px;
     margin-right: 60px;
+}
+
+.nav-foot-two li:hover {
+    text-decoration: underline;
+    color: #ffd180;
 }
 
 .nav-foot-two li:first-child {
@@ -852,7 +896,19 @@ article a {
 }
 
 .social li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212a3a;
+    border-radius: 50px;
     margin-right: 3px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.social img {
+    display: flex;
 }
 
 .feedback {
