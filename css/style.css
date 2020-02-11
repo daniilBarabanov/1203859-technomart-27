@@ -301,13 +301,14 @@ fieldset {
 
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
+    align-items: center;
 }
 
 .header-bottom li {
-    color: white;
     display: flex;
+    color: white;
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
@@ -316,7 +317,6 @@ fieldset {
 }
 
 .header-bottom a {
-    display: flex;
     font-size: 17px;
     text-decoration: none;
     color: #fff;
