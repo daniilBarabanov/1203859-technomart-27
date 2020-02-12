@@ -308,6 +308,7 @@ fieldset {
 
 .header-bottom li {
     display: flex;
+    flex-grow: 1;
     color: white;
     flex-direction: row;
     text-align: center;
@@ -317,68 +318,94 @@ fieldset {
 }
 
 .header-bottom a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 17px;
     text-decoration: none;
     color: #fff;
-    justify-content: space-between;
+    
     text-align: center;
-    align-items: center;
+    
     height: 60px;
 }
 
 .header-bottom li:hover {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    flex-grow: 1;
     height: 60px;
     background-color: #293449;
 }
-
-
 /*!!!Тут разметка секций из main!!!*/
 
 
 /*Оформление цветных блоков из main */
-
-.colorful {
+.colorful-div {
+    display: flex;
+    width:940px;
+}
+.left-colorful {
+    width: 940px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 130px;
-    margin-right: 130px;
+    flex-grow: 1;
+    flex-direction: row;
 }
-
-.colorful-ul {
-    display: flex;
-    flex-wrap: wrap;
+.materials-block {
+    flex-grow: 1;
+    width:300px;
+    height: 123px;
 }
-
-.colorful-ul-2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.colorful-ul li {
+.tools-block {
+    flex-grow: 1;
     width: 300px;
     height: 123px;
+}
+.slider {
+    flex-grow: 2;
+}
+.left-ul {
+    display: flex;
+}
+.left-ul li {
     margin-right: 20px;
 }
-
-.colorful-ul-2 li {
-    width: 300px;
-    height: 123px;
-    margin-bottom: 20px;
+.left-ul span {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color:#ffffff;
 }
+.right-colorful {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.right-ul {
+    display: flex;
+    flex-direction: column;
+
+}
+.right-ul li {
+    margin-bottom: 20px;
+    margin-left: -40px;
+}
+
+
+
+
 
 .newmaterials {
     background-color: #ffbf47;
+    width: 300px;
+    height: 123px;
 }
 
-.newmaterials h3 {
-    margin-top: 26px;
-    margin-left: 23px;
-}
 
 .newmaterials a {
     width: 135px;
@@ -394,39 +421,29 @@ fieldset {
 
 .newtools {
     background-color: #3bbce3;
+    width: 300px;
+    height: 123px;
 }
 
-.newtools h3 {
-    margin-top: 26px;
-    margin-left: 23px;
-}
 
 .newtech {
     background-color: #dc91d8;
-}
-
-.newtech h3 {
-    margin-top: 26px;
-    margin-left: 23px;
+    width: 300px;
+    height: 123px;
 }
 
 .newsales {
     background-color: #8ed78f;
-}
-
-.newsales h3 {
-    margin-top: 26px;
-    margin-left: 23px;
+    width: 300px;
+    height: 123px;
 }
 
 .newdelivery {
     background-color: #ffc047;
+    width: 300px;
+    height: 123px;
 }
 
-.newdelivery h3 {
-    margin-top: 26px;
-    margin-left: 23px;
-}
 
 .pushka a {
     width: 220px;
@@ -457,12 +474,18 @@ article a {
     width: 135px;
     height: 38px;
 }
+.slider{
+    margin-top:-100px;
+}
 
 .slider-drills {
     font-size: 36px;
     line-height: 36px;
     text-align: left;
     color: white;
+    position: relative;
+    top:100px;
+    left:30px;
 }
 
 
