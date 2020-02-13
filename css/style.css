@@ -654,10 +654,6 @@ article a {
     text-transform: uppercase;
 }
 
-.blocks-flex {
-    display: flex;
-}
-
 .popgoodshref:hover {
     background-color: #ca2c37;
 }
@@ -666,8 +662,14 @@ article a {
     background-color: #ba2732;
 }
 
+.blocks-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .catalog-items {
-    width: 700px;
+    width: 940px;
     margin: 20px auto;
 }
 
@@ -810,33 +812,46 @@ article a {
 /*Оформление популярных производителей */
 
 .popmanutop {
+    margin-top: 21px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     background-color: #f9f5f0;
+    width: 940px;
     height: 89px;
-    margin-bottom: 7px;
+    align-items: center;
 }
 
 .popgoodfirms {
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
-    margin-left: 160px;
+    margin-left: 30px;
+    margin-right: 269px;
     text-transform: uppercase;
 }
 
 .popmanufacturershref {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 253px;
     height: 38px;
     font-size: 14px;
     font-family: "Cuprum", "Arial", sans-serif;
     background-color: #ee3643;
     color: #ffffff;
-    float: left;
     text-align: center;
-    padding-top: 14px;
     border-radius: 4px;
-    margin-left: 373px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.popmanufacturershref:hover {
+    background-color: #ca2c37;
+}
+
+.popmanufacturershref:active {
+    background-color: #ba2732;
 }
 
 .topmanufacturers {
@@ -845,7 +860,8 @@ article a {
     justify-content: center;
     align-items: center;
     margin-right: 130px;
-    width: 970px;
+    width: 948px;
+    padding: 0;
 }
 
 .topmanufacturers li {
@@ -857,6 +873,10 @@ article a {
     margin-right: 20px;
     margin-top: 20px;
     border: solid 1px #eaeaea;
+}
+
+.topmanufacturers li:nth-child(4n) {
+    margin-right: 0;
 }
 
 .topmanufacturers li:hover {
@@ -960,15 +980,26 @@ article a {
     margin-bottom: 36px;
 }
 
-.about-us-p2 {}
-
-.companies {}
+.companies {
+    padding: 0;
+}
 
 .companies li {
+    display: flex;
+    position: relative;
     font-size: 18px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-weight: normal;
     line-height: 20px;
+}
+
+.companies li::before {
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+    content: "";
+    position: absolute;
+    top: 0px;
 }
 
 .details {
