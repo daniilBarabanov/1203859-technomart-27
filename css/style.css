@@ -280,16 +280,30 @@ fieldset {
 }
 
 .enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding-left: 48px;
     color: #000000;
+    width: 121px;
+    height: 45px;
+}
+
+.enter:hover path,
+.enter:focus path {
+    fill: #32425C;
+}
+
+.enter svg {
+    margin-right: 14px;
 }
 
 .enter:hover {
     color: #ee3643;
 }
 
-.enter::before {
+
+/*.enter::before {
     content: "";
     position: absolute;
     width: 19px;
@@ -300,14 +314,25 @@ fieldset {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+*/
 
 .registration {
-    margin-left: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
     color: #000000;
+    width: 150px;
+    height: 45px;
 }
 
 .registration:hover {
     color: #ee3643;
+}
+
+.enter,
+.registration {
+    background-color: #ffffff;
 }
 
 
@@ -315,12 +340,12 @@ fieldset {
 
 .lower-header {
     background-color: #f4f7f9;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
 }
 
 .header-bottom {
     box-shadow: 0 5px 0 0 #293449;
-    height: 60px;
+    height: 55px;
     font-size: 17px;
     color: white;
     background-color: #32425c;
@@ -339,7 +364,7 @@ fieldset {
     color: #fff;
     justify-content: center;
     align-items: center;
-    padding: 20px 31px;
+    padding: 17px 31px;
 }
 
 .header-bottom li:hover {
@@ -963,11 +988,13 @@ article a {
 .company-contacts {
     display: flex;
     justify-content: space-between;
-    width:940px;
+    width: 940px;
 }
+
 .about-us {
-    width:550px;
+    width: 550px;
 }
+
 .about-us h2 {
     font-size: 30px;
     color: #000000;
@@ -986,17 +1013,19 @@ article a {
     font-family: "PT Sans", "Arial", sans-serif;
     letter-spacing: normal;
     line-height: 24px;
-    width:550px;
+    width: 550px;
     margin-bottom: 36px;
 }
 
 .companies {
     padding: 0;
 }
+
 .companies {
     list-style: none;
     margin-bottom: 0;
 }
+
 .companies li {
     display: flex;
     font-size: 18px;
@@ -1005,7 +1034,7 @@ article a {
     position: relative;
     line-height: 20px;
     padding-left: 36px;
-    margin-top:23px;
+    margin-top: 23px;
 }
 
 .companies li::before {
@@ -1014,8 +1043,8 @@ article a {
     background-color: #ee3643;
     content: "";
     position: absolute;
-    top:10px;
-    left:0px;
+    top: 10px;
+    left: 0px;
 }
 
 .details {
@@ -1034,6 +1063,7 @@ article a {
     margin-top: 37px;
     margin-bottom: 86px;
 }
+
 .details:hover {
     background-color: #ca2c37;
 }
@@ -1052,14 +1082,16 @@ article a {
     font-family: "Cuprum", "Arial", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
-    margin-top:82px;
+    margin-top: 82px;
 }
+
 .contacts {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .contacts p {
     font-size: 13px;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1087,6 +1119,7 @@ article a {
     text-align: center;
     border-radius: 4px;
 }
+
 .write-us:hover {
     background-color: #ca2c37;
 }
@@ -1131,6 +1164,7 @@ article a {
 }
 
 .shit {
+    width: 390px;
     display: flex;
     flex-direction: column;
 }
@@ -1143,10 +1177,15 @@ article a {
     margin-bottom: 53px;
 }
 
+.navigation-footer {
+    width: 479px;
+}
+
 .nav-foot-one {
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 42px;
 }
 
 .nav-foot-one li {
@@ -1157,14 +1196,20 @@ article a {
     margin-right: 60px;
 }
 
+.nav-foot-one li:last-child {
+    margin-right: 0;
+}
+
 .nav-foot-one li:hover {
     text-decoration: underline;
 }
 
 .nav-foot-two {
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-left: 26px;
 }
 
 .nav-foot-two li {
@@ -1178,10 +1223,6 @@ article a {
 .nav-foot-two li:hover {
     text-decoration: underline;
     color: #ffd180;
-}
-
-.nav-foot-two li:first-child {
-    margin-left: 18px;
 }
 
 
@@ -1232,8 +1273,9 @@ article a {
     height: 42px;
     line-height: 42px;
 }
+
 .social li:hover {
-    background-color: red;
+    background-color: #ee3643;
 }
 
 .social img {
