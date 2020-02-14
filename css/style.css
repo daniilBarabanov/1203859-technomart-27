@@ -669,6 +669,8 @@ article a {
 }
 
 .catalog-items {
+    display: flex;
+    flex-direction: row;
     width: 940px;
     margin: 20px auto;
 }
@@ -961,8 +963,11 @@ article a {
 .company-contacts {
     display: flex;
     justify-content: space-between;
+    width:940px;
 }
-
+.about-us {
+    width:550px;
+}
 .about-us h2 {
     font-size: 30px;
     color: #000000;
@@ -977,20 +982,30 @@ article a {
 }
 
 .about-us-p1 {
+    font-size: 13px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    letter-spacing: normal;
+    line-height: 24px;
+    width:550px;
     margin-bottom: 36px;
 }
 
 .companies {
     padding: 0;
 }
-
+.companies {
+    list-style: none;
+    margin-bottom: 0;
+}
 .companies li {
     display: flex;
-    position: relative;
     font-size: 18px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-weight: normal;
+    position: relative;
     line-height: 20px;
+    padding-left: 36px;
+    margin-top:23px;
 }
 
 .companies li::before {
@@ -999,10 +1014,14 @@ article a {
     background-color: #ee3643;
     content: "";
     position: absolute;
-    top: 0px;
+    top:10px;
+    left:0px;
 }
 
 .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 38px;
     font-size: 14px;
@@ -1011,10 +1030,16 @@ article a {
     color: #ffffff;
     float: left;
     text-align: center;
-    padding-top: 14px;
     border-radius: 4px;
     margin-top: 37px;
     margin-bottom: 86px;
+}
+.details:hover {
+    background-color: #ca2c37;
+}
+
+.details:active {
+    background-color: #ba2732;
 }
 
 .details a {
@@ -1025,25 +1050,34 @@ article a {
 .contacts h2 {
     font-size: 30px;
     font-family: "Cuprum", "Arial", sans-serif;
-    margin-right: 309px;
-    margin-top: 82px;
     font-weight: normal;
     text-transform: uppercase;
+    margin-top:82px;
 }
-
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .contacts p {
     font-size: 13px;
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
+    letter-spacing: normal;
+    line-height: 24px;
 }
 
 .contacts img {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .write-us {
-    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
     height: 38px;
     font-size: 14px;
     font-family: "Cuprum", "Arial", sans-serif;
@@ -1051,8 +1085,14 @@ article a {
     color: #ffffff;
     float: left;
     text-align: center;
-    padding-top: 14px;
     border-radius: 4px;
+}
+.write-us:hover {
+    background-color: #ca2c37;
+}
+
+.write-us:active {
+    background-color: #ba2732;
 }
 
 
@@ -1191,6 +1231,9 @@ article a {
     width: 42px;
     height: 42px;
     line-height: 42px;
+}
+.social li:hover {
+    background-color: red;
 }
 
 .social img {
