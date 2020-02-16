@@ -495,60 +495,135 @@ fieldset {
 }
 
 .slider {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     width: 620px;
     height: 266px;
     margin-top: 20px;
-    background-image: url('../img/slide-image.jpg');
 }
 
 .slider-drills {
+    position: absolute;
+    margin-top: 27px;
+    margin-bottom: 0px;
+    margin-left: 24px;
+    width: auto;
+    height: 30px;
+    font-family: 'Cuprum';
     font-size: 36px;
-    font-weight: bold;
     line-height: 36px;
     color: white;
-    margin-top: 27px;
-    margin-left: 24px;
-    margin-bottom: 0px;
-    margin-right: 0px;
 }
 
-.slider p {
-    font-family: Cuprum;
+.slider input[name="switch"] {
+    display: none;
+}
+
+.switch {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 295px;
+    bottom: 36px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.switch label {
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+    background-color: #ee3643;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+    background-color: #ee3643;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slides {
+    width: 300%;
+    transition: all 0.5s;
+}
+
+.slides h2 {
+    position: absolute;
+    margin-top: 27px;
+    margin-bottom: 0px;
+    margin-left: 24px;
+    width: auto;
+    height: 30px;
+    font-family: 'Cuprum';
+    font-size: 36px;
+    line-height: 36px;
+    color: white
+}
+
+.slides p {
+    position: absolute;
+    margin-top: 65px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    width: auto;
+    height: 17px;
+    font-family: 'Cuprum';
     font-size: 18px;
     line-height: 24px;
-    text-align: left;
-    color: #ffffff;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-top: 8px;
-    margin-left: 25px;
+    color: white;
 }
 
-.slider a {
+.slides img {
+    width: 620px;
+    height: 266px;
+    float: left;
+}
+
+.open-catalog {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     position: absolute;
+    margin-top: 206px;
+    margin-left: 25px;
     width: 195px;
     height: 38px;
     font-size: 14px;
     background-color: #ee3643;
     color: #ffffff;
-    margin-top: 206px;
-    margin-left: 25px;
-    margin-bottom: 22px;
-    border-radius: 3px;
     text-transform: uppercase;
+    border-radius: 3px;
 }
 
-.slider a:hover {
+.open-catalog:hover {
     background-color: #ca2c37;
 }
 
-.slider a:active {
+.open-catalog:active {
     background-color: #ba2732;
+}
+
+#btn1:checked~.slider-inner .slides {
+    transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides,
+.opencatalog {
+    transform: translate(-620px);
+}
+
+.slider input {
+    display: none;
 }
 
 .right-colorful {
@@ -1308,6 +1383,10 @@ fieldset {
     line-height: 18px;
     font-family: "Cuprum", "Arial", sans-serif;
     color: #ffd180;
+}
+
+.feedback a:active {
+    color: #ee3643;
 }
 
 .developed {
