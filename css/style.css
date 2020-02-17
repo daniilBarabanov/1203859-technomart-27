@@ -525,7 +525,7 @@ fieldset {
     left: 295px;
     bottom: 36px;
     text-align: center;
-    width: 100%;
+    width: 50px;
     z-index: 5;
 }
 
@@ -556,7 +556,6 @@ fieldset {
     width: 300%;
     transition: all 0.5s;
 }
-
 
 .slides p {
     position: absolute;
@@ -601,11 +600,11 @@ fieldset {
     background-color: #ba2732;
 }
 
-
 #btn2:checked~.slides .slider-inner .item-1 {
     transform: translate(0);
-    background-image:url('../img/slide-image2.jpg');
+    background-image: url('../img/slide-image2.jpg');
 }
+
 #btn2:checked~.slides .slider-inner .item-1 .slider-drills {
     transform: translate(0);
 }
@@ -613,77 +612,79 @@ fieldset {
 .slider input {
     display: none;
 }
-.carousel-wrapper{
-    height:266px;
-    position:relative;
-    width:620px;
-    margin:0 auto;
-  }
-  .carousel-item{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    opacity:0;
-    transition: all 0.5s ease-in-out;
-  }
-  .arrow{
-    border: solid white;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 12px;
-  }
-  
-  .arrow-prev{
-    left:25px;
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%) rotate(135deg);
-  }
-   
-  .arrow-next{
-      right:25px;
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%) rotate(-45deg);
-    }
-  
-  .light{
-    color:white;
-  }
-  
-  
-  
-  /*Select every element*/
-  [id^="item"] {
-      display: none;
-    }
-  
-  .item-1 {
-      z-index: 2;
-      opacity: 1;
-    background-image:url('../img/slide-image.jpg');
-    }
-  .item-2{
-    background-image:url('../img/slide-image2.jpg');
-  }
-  
-  *:target ~ .item-1 {
-      opacity: 0;
-    }
-  
-  #item-1:target ~ .item-1 {
-      opacity: 1;
-    }
-  
-  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-      z-index: 3;
-      opacity: 1;
-    }
 
-  
-  
+.carousel-wrapper {
+    height: 266px;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+    color: white;
+}
+
+
+/*Select every element*/
+
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background-image: url('../img/slide-image.jpg');
+}
+
+.item-2 {
+    background-image: url('../img/slide-image2.jpg');
+}
+
+*:target~.item-1 {
+    opacity: 0;
+}
+
+#item-1:target~.item-1 {
+    opacity: 1;
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3 {
+    z-index: 3;
+    opacity: 1;
+}
 
 .right-colorful {
     width: 300px;
@@ -1025,6 +1026,7 @@ fieldset {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
     margin-right: 130px;
     width: 948px;
     padding: 0;
@@ -1067,17 +1069,50 @@ fieldset {
 .services {
     background-color: #f4f7f9;
     height: 522px;
+    position: relative;
+    margin-top: 85px;
+}
+
+.services::after {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    top: 143px;
+    left: 234px;
+    width: 15px;
+    height: 284px;
+    background: url(../img/shadow.png) no-repeat;
+    background-position: 0 0;
+}
+
+.services-toggle {
+    position: absolute;
+    z-index: 60;
+    width: 60px;
+    height: 10px;
+}
+
+.services-toggle label {
+    display: block;
+    width: 218px;
+    padding: 13px 0 16px 22px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+    background-color: #32425c;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
 }
 
 .services h2 {
+    margin-top: 68px;
     font-size: 30px;
     line-height: 30px;
-    margin-left: 131px;
-    padding-top: 68px;
 }
 
 .services-description {
-    margin-left: 130px;
     margin-top: 38px;
 }
 
@@ -1095,7 +1130,7 @@ fieldset {
 
 .services-slider {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .services-slider-1 {
