@@ -1077,8 +1077,8 @@ fieldset {
     content: "";
     position: absolute;
     z-index: 50;
-    top: 143px;
-    left: 234px;
+    top: 209px;
+    left: 715px;
     width: 15px;
     height: 284px;
     background: url(../img/shadow.png) no-repeat;
@@ -1107,9 +1107,13 @@ fieldset {
 }
 
 .services h2 {
-    margin-top: 68px;
     font-size: 30px;
     line-height: 30px;
+}
+
+.services-header {
+    padding-top: 68px;
+    font-weight: normal;
 }
 
 .services-description {
@@ -1120,6 +1124,7 @@ fieldset {
     color: #32425c;
     font-size: 36px;
     line-height: 36px;
+    font-weight: normal;
 }
 
 .services p {
@@ -1128,9 +1133,27 @@ fieldset {
     font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.right-slider {
+    padding-left: 319px;
+}
+
 .services-slider {
     display: flex;
     flex-direction: column;
+    margin-top: 71px;
+    min-height: 282px;
+}
+
+.services-delivery {
+    min-height: 281px;
+    background: url('../img/delivery.png') no-repeat 152px 40px;
+}
+
+.services-delivery h3 {
+    margin: 0;
+    margin-top: -40px;
+    margin-bottom: 27px;
+    text-transform: uppercase;
 }
 
 .services-slider-1 {
