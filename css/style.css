@@ -1073,12 +1073,12 @@ fieldset {
     margin-top: 85px;
 }
 
-.services::after {
+.services-toggle::after {
     content: "";
     position: absolute;
-    z-index: 50;
-    top: 209px;
-    left: 715px;
+    z-index: 99;
+    top:-39px;
+    left:231px;
     width: 15px;
     height: 284px;
     background: url(../img/shadow.png) no-repeat;
@@ -1104,14 +1104,28 @@ fieldset {
     background-color: #32425c;
     border-top: 1px solid #405069;
     border-bottom: 1px solid #293449;
+    cursor: pointer;
+    font-weight: normal;
+}
+.services-toggle label:hover {
+    cursor: pointer;
+    background-color: #293449;
+}
+.services-toggle label:active {
+    background-color: #ffffff;
+    color:#32425c;
+    border-top:none;
+    border-bottom: none;
 }
 
 .services h2 {
     font-size: 30px;
     line-height: 30px;
+    margin-top:50px;
 }
 
 .services-header {
+    margin-top:0;
     padding-top: 68px;
     font-weight: normal;
 }
@@ -1125,6 +1139,7 @@ fieldset {
     font-size: 36px;
     line-height: 36px;
     font-weight: normal;
+    padding-top:39px;
 }
 
 .services p {
@@ -1135,18 +1150,25 @@ fieldset {
 
 .right-slider {
     padding-left: 319px;
+    overflow:hidden;
+    height:289px;
+    display:block;
 }
 
 .services-slider {
-    display: flex;
+    display: block;
     flex-direction: column;
     margin-top: 71px;
     min-height: 282px;
+    overflow: hidden;
+    transform: bottom(2s);
 }
-
+.services-slider input {
+    display: none;
+}
 .services-delivery {
     min-height: 281px;
-    background: url('../img/delivery.png') no-repeat 152px 40px;
+    background: url('../img/delivery.png') no-repeat 152px 39px;
 }
 
 .services-delivery h3 {
@@ -1155,13 +1177,34 @@ fieldset {
     margin-bottom: 27px;
     text-transform: uppercase;
 }
-
-.services-slider-1 {
-    margin-top: 74px;
-    margin-left: 130px;
-    margin-right: 220px;
+#button-1:checked~.services-toggle label[for="button-1"] {
+    background-color: #ffffff;
+    color:#32425c;
+    border-top:none;
+    border-bottom: none;
 }
+#button-2:checked~.services-toggle label[for="button-2"] {
+    background-color: #ffffff;
+    color:#32425c;
+    border-top:none;
+    border-bottom: none;
+}
+#button-3:checked~.services-toggle label[for="button-3"] {
+    background-color: #ffffff;
+    color:#32425c;
+    border-top:none;
+    border-bottom: none;
+}
+#button-1:checked ~ .services-slider .services-delivery, #button-2:checked ~ .services-slider .services-guarantee, #button-3:checked ~ .services-slider .services-credit {
+    display:inline-block;
+}
+#button-2:checked~.services-slider .right-slider .services-guarantee{
 
+    transform: translate(-400px);
+    background: url('../img/guarantee.png') no-repeat 152px 39px;
+    z-index: 89;
+    opacity: 1;
+}
 .services-ul h3 {
     margin-bottom: 34px;
 }
