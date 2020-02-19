@@ -1073,12 +1073,17 @@ fieldset {
     margin-top: 85px;
 }
 
+.slide {
+    display: none;
+    min-height: 282px;
+}
+
 .services-toggle::after {
     content: "";
     position: absolute;
     z-index: 99;
-    top:-39px;
-    left:231px;
+    top: -39px;
+    left: 231px;
     width: 15px;
     height: 284px;
     background: url(../img/shadow.png) no-repeat;
@@ -1093,7 +1098,7 @@ fieldset {
 }
 
 .services-toggle label {
-    display: block;
+    display: inline-block;
     width: 218px;
     padding: 13px 0 16px 22px;
     font-weight: 700;
@@ -1107,42 +1112,46 @@ fieldset {
     cursor: pointer;
     font-weight: normal;
 }
+
 .services-toggle label:hover {
     cursor: pointer;
     background-color: #293449;
 }
+
 .services-toggle label:active {
     background-color: #ffffff;
-    color:#32425c;
-    border-top:none;
+    color: #32425c;
+    border-top: none;
     border-bottom: none;
 }
 
 .services h2 {
     font-size: 30px;
     line-height: 30px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .services-header {
-    margin-top:0;
+    margin-top: 0;
     padding-top: 68px;
     font-weight: normal;
 }
 
 .services-description {
+    font-size: 13px;
+    font-family: "PT Sans", "Arial", sans-serif;
     margin-top: 38px;
 }
 
-.services h3 {
+.span-header {
     color: #32425c;
     font-size: 36px;
     line-height: 36px;
     font-weight: normal;
-    padding-top:39px;
+    padding-top: 39px;
 }
 
-.services p {
+.slide p {
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1150,63 +1159,54 @@ fieldset {
 
 .right-slider {
     padding-left: 319px;
-    overflow:hidden;
-    height:289px;
-    display:block;
+    height: 289px;
+    list-style: none;
 }
 
 .services-slider {
-    display: block;
-    flex-direction: column;
+    position: relative;
     margin-top: 71px;
     min-height: 282px;
-    overflow: hidden;
-    transform: bottom(2s);
-}
-.services-slider input {
-    display: none;
-}
-.services-delivery {
-    min-height: 281px;
-    background: url('../img/delivery.png') no-repeat 152px 39px;
 }
 
-.services-delivery h3 {
+.span-header {
     margin: 0;
     margin-top: -40px;
     margin-bottom: 27px;
     text-transform: uppercase;
 }
-#button-1:checked~.services-toggle label[for="button-1"] {
-    background-color: #ffffff;
-    color:#32425c;
-    border-top:none;
-    border-bottom: none;
-}
-#button-2:checked~.services-toggle label[for="button-2"] {
-    background-color: #ffffff;
-    color:#32425c;
-    border-top:none;
-    border-bottom: none;
-}
-#button-3:checked~.services-toggle label[for="button-3"] {
-    background-color: #ffffff;
-    color:#32425c;
-    border-top:none;
-    border-bottom: none;
-}
-#button-1:checked ~ .services-slider .services-delivery, #button-2:checked ~ .services-slider .services-guarantee, #button-3:checked ~ .services-slider .services-credit {
-    display:inline-block;
-}
-#button-2:checked~.services-slider .right-slider .services-guarantee{
 
-    transform: translate(-400px);
-    background: url('../img/guarantee.png') no-repeat 152px 39px;
-    z-index: 89;
-    opacity: 1;
+#button-1:checked~.services-toggle label[for=button-1] {
+    background-color: #ffffff;
+    color: #32425c;
+    border-top: none;
+    border-bottom: none;
 }
-.services-ul h3 {
-    margin-bottom: 34px;
+
+#button-2:checked~.services-toggle label[for=button-2] {
+    background-color: #ffffff;
+    color: #32425c;
+    border-top: none;
+    border-bottom: none;
+}
+
+#button-3:checked~.services-toggle label[for=button-3] {
+    background-color: #ffffff;
+    color: #32425c;
+    border-top: none;
+    border-bottom: none;
+}
+
+#button-1:checked~.right-slider {
+    background: url('../img/delivery.png') no-repeat 472px 55px;
+}
+
+#button-2:checked~.right-slider {
+    background: url('../img/guarantee.png') no-repeat 472px 0px;
+}
+
+#button-3:checked~.right-slider {
+    background: url('../img/credit.png') no-repeat 472px 30px;
 }
 
 .button-a {
@@ -1220,6 +1220,11 @@ fieldset {
     text-align: center;
     padding-top: 14px;
     border-radius: 4px;
+}
+
+#button-1:checked~.right-slider #slide1,
+#button-2:checked~.right-slider #slide2 #button-3:checked~.right-slider #slide3 {
+    display: block;
 }
 
 
