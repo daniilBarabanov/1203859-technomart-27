@@ -150,7 +150,7 @@ fieldset {
 .searchform input {
     background-color: #293449;
     border: none;
-    width: 270px;
+    width: 253px;
 }
 
 .searchform input:hover {
@@ -181,7 +181,8 @@ fieldset {
 .header-top li {
     display: flex;
     align-items: center;
-    width: 152px;
+    justify-content: center;
+    width: 150px;
     height: 42px;
 }
 
@@ -1166,7 +1167,7 @@ fieldset {
 .services-slider {
     position: relative;
     margin-top: 64px;
-    min-height:284px;
+    min-height: 284px;
 }
 
 .span-header {
@@ -1223,7 +1224,8 @@ fieldset {
 }
 
 #button-1:checked~.right-slider #slide1,
-#button-2:checked~.right-slider #slide2 , #button-3:checked~.right-slider #slide3 {
+#button-2:checked~.right-slider #slide2,
+#button-3:checked~.right-slider #slide3 {
     display: block;
 }
 
@@ -1762,28 +1764,23 @@ fieldset legend {
 }
 
 
-
-
-
-
-
-
-
 /* Оформление всплывающих окон */
-.form-write-us{
+
+.form-write-us {
     position: fixed;
-    color:#000000;
+    color: #000000;
     background-color: #ffffff;
-    width:620px;
+    width: 620px;
     min-height: 423px;
-    border-top:7px solid #ee3643;
-    box-shadow: 0px 20px 40px 0 rgba(0,0,0, 0.75);
+    border-top: 7px solid #ee3643;
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
     z-index: 100;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 18px;
     font-weight: normal;
 }
+
 .form-write-us input[type=text],
 .form-write-us input[type=email] {
     width: 200px;
@@ -1793,53 +1790,65 @@ fieldset legend {
     color: #999;
     background: #fff;
     border: 2px solid #999;
-    border-radius:5px
+    border-radius: 5px
 }
+
 .form-write-us textarea {
     margin-bottom: 24px;
     font-size: 13px;
     font-family: "PT Sans", "Arial", sans-serif;
     color: #a9a9a9;
     border: 3px solid #d7dcde;
-    outline:0
+    outline: 0
 }
-.form
+
 .write-us-form {
-    margin-top:48px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
-.input-mail {
+
+.form-up {
+    height: 261px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .popup {
-    top:30%;
-    left:30%;
+    top: 5%;
+    left: 34%;
 }
 
 .modal-close {
     position: absolute;
     width: 21px;
     height: 21px;
-    right:6px;
-    top:6px;
-    border:0;
+    right: 6px;
+    top: 6px;
+    border: 0;
     cursor: pointer;
 }
+
 .modal-close::before,
 .modal-close::after {
-    content:"";
+    content: "";
     position: absolute;
-    width:18px;
+    width: 18px;
     height: 4px;
-    background-color:#ee3643;
-    top:9px;
-    left:2px;
+    background-color: #ee3643;
+    top: 9px;
+    left: 2px;
 }
+
 .modal-close::before {
     transform: rotate(45deg);
 }
+
 .modal-close::after {
     transform: rotate(-45deg);
 }
-
 
 .send {
     display: flex;
@@ -1855,6 +1864,7 @@ fieldset legend {
     border-radius: 4px;
     margin-left: 80px;
 }
+
 .send:hover {
     background-color: #ca2c37;
 }

@@ -24,10 +24,10 @@
                 </form>
                 <ul class="header-top-menu">
                     <li>
-                        <a class="bookmarks" href="#"><img src="img/icon-bookmark.svg" alt="Иконка закладки" width="17" height="17" />Закладки:<span>0</span></a>
+                        <a class="bookmarks" href="#"><img src="img/icon-bookmark.svg" alt="Иконка закладки" width="17" height="17" />Закладки: <span>0</span></a>
                     </li>
                     <li>
-                        <a class="basket" href="#"><img src="img/icon-cart.svg" alt="Иконка закладки" width="17" height="17" />Корзина:<span>0</span></a>
+                        <a class="basket" href="#"><img src="img/icon-cart.svg" alt="Иконка закладки" width="17" height="17" />Корзина: <span>0</span></a>
                     </li>
                     <li><a class="tomakeanorder" href="#">Оформить заказ</a></li>
                 </ul>
@@ -398,17 +398,23 @@
             <input type="text" name="name" id="name" placeholder="Имя Фамилия">
         </form>
     </div>
-    <div class="form-write-us popup">
+    <div class="form-write-us popup invisible">
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
             <div class="form-up">
-            <label for="yourname"><span>Ваше имя:</span></label>
-            <input type="text" class="input-name" name="yourname" id="yourname" placeholder="Имя Фамилия">
-            <label class="input-mail" for="youremail"><span>Ваш e-mail:</span></label>
-            <input type="email" class="input-mail" name="youremail" id="youremail" placeholder="email@example.com"><br>
-            <label for="yourmail"><span>Текст письма:</span></label><br>
-            <textarea class="input-area" name="yourmail" id="yourmail" rows="6" cols="61" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';">
+                <div>
+                    <label for="yourname"><span>Ваше имя:</span><br></label>
+                    <input type="text" class="input-name" name="yourname" id="yourname" placeholder="Имя Фамилия"><br>
+                </div>
+                <div>
+                    <label class="input-mail" for="youremail"><span>Ваш e-mail:</span><br></label>
+                    <input type="email" class="input-mail" name="youremail" id="youremail" placeholder="email@example.com"><br>
+                </div>
+                <div>
+                    <label for="yourmail"><span>Текст письма:</span></label><br>
+                    <textarea class="input-area" name="yourmail" id="yourmail" rows="6" cols="61" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';">
           </textarea>
-          </div>
+                </div>
+            </div>
             <button type="submit" class="send">Отправить</button>
             <button class="modal-close" type="button">
                 <span class="invisible">Закрыть</span>
