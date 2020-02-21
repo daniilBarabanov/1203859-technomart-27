@@ -126,25 +126,25 @@ fieldset {
 }
 
  ::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #a9a9a9;
 }
 
  ::-moz-placeholder {
-    color: #ffffff;
+    color: #a9a9a9;
 }
 
 
 /* Firefox 19+ */
 
  :-moz-placeholder {
-    color: #ffffff;
+    color: #a9a9a9;
 }
 
 
 /* Firefox 18- */
 
  :-ms-input-placeholder {
-    color: #ffffff;
+    color: #a9a9a9;
 }
 
 .searchform input {
@@ -1803,6 +1803,7 @@ fieldset legend {
     border: 3px solid #d7dcde;
     outline:0
 }
+.form
 .write-us-form {
     margin-top:48px;
 }
