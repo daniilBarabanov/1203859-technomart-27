@@ -18,18 +18,24 @@
             <div class="container flex">
                 <a class="techmart-logo" href="index.html"><img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
                 <h1 class="invisible">Техномарт</h1>
-                <form class="searchform" action="https://echo.htmlacademy.ru" method="POST">
-                    <img src="img/icon-search.svg" alt="Иконка поиска" width="17" height="17">
-                    <input type="search" id="search" name="search" placeholder="Поиск:">
-                </form>
+                <div class="search-block">
+                    <form class="searchform" action="https://echo.htmlacademy.ru" method="POST">
+                        <input type="search" id="search" name="search" placeholder="Поиск:">
+                        <label class="search-icon" for="search"></label>
+                    </form>
+                </div>
                 <ul class="header-top-menu">
                     <li>
-                        <a class="bookmarks" href="#"><img src="img/icon-bookmark.svg" alt="Иконка закладки" width="17" height="17" />Закладки: <span>0</span></a>
+                        <a class="bookmarks" href="#"><span>Закладки: 0</span></a>
                     </li>
                     <li>
-                        <a class="basket" href="#"><img src="img/icon-cart.svg" alt="Иконка закладки" width="17" height="17" />Корзина: <span>0</span></a>
+                        <a class="basket" href="#"><span>Корзина: 0</span></a>
                     </li>
-                    <li><a class="tomakeanorder" href="#">Оформить заказ</a></li>
+                    <li>
+                        <a class="tomakeanorder" href="#">
+                            <p>Оформить заказ</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -95,14 +101,14 @@
                                     <div class="slider-inner">
                                         <span id="item-1"></span>
                                         <span id="item-2"></span>
-                                        <div class="carousel-item item-1">
+                                        <div class="carousel-item item-1" id="dada-1">
                                             <h2 class="slider-drills">ДРЕЛИ</h2>
                                             <p>Соседям на радость!</p>
                                             <a class="arrow arrow-prev" href="#item-2"></a>
                                             <a class="arrow arrow-next" href="#item-2"></a>
                                             <a class="open-catalog" href="catalog.html">Открыть каталог</a>
                                         </div>
-                                        <div class="carousel-item item-2">
+                                        <div class="carousel-item item-2" id="dada-2">
                                             <h2 class="slider-drills">ПЕРФОРАТОРЫ</h2>
                                             <p>Настоящие мужские игрушки</p>
                                             <a class="arrow arrow-prev" href="#item-1"></a>
@@ -280,13 +286,13 @@
                     <ul class="right-slider">
                         <li class="services-slides slide " id="slide1">
                             <span class="span-header">Доставка</span>
-                            <p>
+                            <p class="service-about-1">
                                 Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!
                             </p>
                         </li>
                         <li class="services-slides slide " id="slide2">
                             <span class="span-header">Гарантия</span>
-                            <p>
+                            <p class="service-about-2">
                                 Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгоранием,
                                 <br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.
                                 <br> Дом уж восстановите как-нибудь сами.<br>
@@ -294,7 +300,7 @@
                         </li>
                         <li class="services-slides slide" id="slide3">
                             <span class="span-header">Кредит</span>
-                            <p>
+                            <p class="service-about-1">
                                 Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.
                             </p>
                             <a class="button-a" href="#">Отправить заявку</a>
