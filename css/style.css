@@ -1690,17 +1690,85 @@ fieldset {
 /*Оформление breadcrumbs */
 
 .breadcrumbscatalog {
+    display: flex;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.breadcrumbscatalog li {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.breadcrumbscatalog li:nth-child(2) {
+    margin-left: 41px;
+}
+
+.breadcrumbscatalog li:nth-child(3) {
+    margin-left: 39px;
+}
+
+.breadcrumbscatalog li:nth-child(4) {
+    margin-left: 43px;
+}
+
+.breadcrumbscatalog li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -22px;
+    width: 8px;
+    height: 12px;
+    background: url('../img/icon-right-small.svg') no-repeat;
+    background-position: 0 0;
+}
+
+.breadcrumbscatalog li:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -22px;
+    width: 8px;
+    height: 12px;
+    background: url('../img/icon-right-small.svg') no-repeat;
+    background-position: 0 0;
+}
+
+.breadcrumbscatalog li:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -22px;
+    width: 8px;
+    height: 12px;
+    background: url('../img/icon-right-small.svg') no-repeat;
+    background-position: 0 0;
+}
+
+.perf-h {
+    display: flex;
+    align-items: center;
+    height: 89px;
+    margin-top: 25px;
+    background-color: #f2f6f8;
 }
 
 .perforators {
+    width: 168px;
+    height: 23px;
+    font-family: 'Cuprum';
     font-size: 30px;
     line-height: 30px;
+    text-align: left;
     color: #32425c;
-    background-color: #f2f6f8;
-    text-decoration: dotted;
-    text-decoration: red;
+    text-transform: uppercase;
+    margin-left: 30px;
 }
 
 .filters-block {
@@ -1709,7 +1777,6 @@ fieldset {
     display: flex;
     justify-content: space-between;
     background-color: #f7f3ec;
-    margin: 0 auto;
 }
 
 .filters {
@@ -1779,6 +1846,14 @@ fieldset legend {
 }
 
 
+/*Разметка центральной части */
+
+.main-block {
+    display: flex;
+    margin-top: 20px;
+}
+
+
 /*Оформляем карточки товаров */
 
 .catalog-list {
@@ -1786,9 +1861,8 @@ fieldset legend {
     flex-wrap: wrap;
     width: 706px;
     padding: 0;
-    margin: 0;
+    margin-top: 21px;
     margin-bottom: 25px;
-    margin-left: 371px;
     list-style: none;
 }
 
@@ -1825,7 +1899,7 @@ fieldset legend {
 .pagination {
     display: flex;
     flex-direction: row;
-    margin-left: 370px;
+    padding-left: 0;
 }
 
 .pagination li {
@@ -1900,25 +1974,51 @@ fieldset legend {
     font-weight: normal;
 }
 
+.form-write-us input::-webkit-input-placeholder {
+    color: #a9a9a9;
+}
+
+.form-write-us input::-moz-placeholder {
+    color: #a9a9a9;
+}
+
+
+/* Firefox 19+ */
+
+.form-write-us input:-moz-placeholder {
+    color: #a9a9a9;
+}
+
+
+/* Firefox 18- */
+
+.form-write-us input:-ms-input-placeholder {
+    color: #a9a9a9;
+}
+
 .form-write-us input[type=text],
 .form-write-us input[type=email] {
-    width: 200px;
+    width: 216px;
+    height: 34px;
     font-size: 13px;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
     color: #999;
     background: #fff;
     border: 2px solid #999;
-    border-radius: 5px
+    border-radius: 5px;
+    margin-top: 12px;
 }
 
 .form-write-us textarea {
-    margin-bottom: 24px;
     font-size: 13px;
     font-family: "PT Sans", "Arial", sans-serif;
     color: #a9a9a9;
     border: 3px solid #d7dcde;
-    outline: 0
+    border-radius: 3px;
+    outline: 0;
+    width: 454px;
+    min-height: 114px;
 }
 
 .write-us-form {
@@ -1937,7 +2037,20 @@ fieldset legend {
 
 .popup {
     top: 5%;
-    left: 34%;
+    left: 33.5%;
+}
+
+.myname {
+    margin-right: 20px;
+}
+
+.myname,
+.mymail {
+    height: 64px;
+}
+
+.mytext textarea {
+    margin-top: 13px;
 }
 
 .modal-close {
@@ -1954,11 +2067,11 @@ fieldset legend {
 .modal-close::after {
     content: "";
     position: absolute;
-    width: 18px;
+    width: 26px;
     height: 4px;
     background-color: #ee3643;
     top: 9px;
-    left: 2px;
+    left: -3px;
 }
 
 .modal-close::before {
@@ -1967,6 +2080,15 @@ fieldset legend {
 
 .modal-close::after {
     transform: rotate(-45deg);
+}
+
+.form-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    min-width: 620px;
+    background-color: #f4f4f4;
 }
 
 .send {
@@ -1981,7 +2103,7 @@ fieldset legend {
     color: #ffffff;
     text-align: center;
     border-radius: 4px;
-    margin-left: 80px;
+    text-transform: uppercase;
 }
 
 .send:hover {
