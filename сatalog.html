@@ -100,59 +100,60 @@
                     </form>
                     <p>0 - 30000</p>
                     <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
-                        <fieldset>
+                        <fieldset class="first-field">
                             <legend class="filter-sort">Производители:</legend>
                             <ul class="manufacturers">
-                                <li>
-                                    <input type="checkbox" name="bosch" id="bosch" checked>
+                                <li class="manufacturers-options">
+                                    <input class="invisible filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
                                     <label for="bosch">
               Bosch
               </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="interskol" id="interskol">
+                                <li class="manufacturers-options">
+                                    <input class="invisible filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
                                     <label for="interskol">
               Интерскол
               </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="makita" id="makita" checked>
+                                <li class="manufacturers-options">
+                                    <input class="invisible filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
                                     <label for="makita">
               Makita
               </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="dewalt" id="dewalt">
+                                <li class="manufacturers-options">
+                                    <input class="invisible filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
                                     <label for="dewalt">
               Dewalt
               </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="hitachi" id="hitachi">
+                                <li class="manufacturers-options">
+                                    <input class="invisible filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
                                     <label for="hitachi">
               Hitachi
               </label>
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+                        <hr class="line">
+                        <fieldset class="second-field">
                             <legend class="filter-sort">Питание:</legend>
-                            <ul class="Nutrition">
-                                <li>
-                                    <input type="radio" name="pitanie" value="accum" id="accum">
+                            <ul class="nutrition">
+                                <li class="manufacturers-options">
+                                    <input class="invisible filter-input-radio" type="radio" name="pitanie" value="accum" id="accum" checked>
                                     <label for="accum">
               Аккумуляторные
               </label>
                                 </li>
-                                <li>
-                                    <input type="radio" name="pitanie" value="net" id="net">
+                                <li class="manufacturers-options">
+                                    <input class="invisible filter-input-radio" type="radio" name="pitanie" value="net" id="net">
                                     <label for="net">
               Сетевые
               </label>
                                 </li>
                             </ul>
                         </fieldset>
-                        <button class="show" type="submit">Показать:</button>
+                        <button class="show" type="submit">Показать</button>
                     </form>
                 </div>
                 <div class="catalog-center">

@@ -3,7 +3,7 @@
     body {
         margin: 0;
         padding: 0;
-        font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
+        font-family: 'Cuprum', 'PT Sans', 'Arial', sans-serif;
         font-weight: normal;
         font-size: 13px;
         color: black;
@@ -488,7 +488,7 @@
     
     .colorful-div span {
         position: absolute;
-        font-family: Cuprum;
+        font-family: "Cuprum", "Arial", sans-serif;
         font-size: 24px;
         font-weight: bold;
         line-height: 30px;
@@ -604,7 +604,7 @@
         margin-left: 24px;
         width: auto;
         height: 30px;
-        font-family: 'Cuprum';
+        font-family: 'Cuprum', "Arial", sans-serif;
         font-size: 36px;
         line-height: 36px;
         color: white;
@@ -660,7 +660,7 @@
         margin-left: 25px;
         width: auto;
         height: 17px;
-        font-family: 'Cuprum';
+        font-family: 'Cuprum', "Arial", sans-serif;
         font-size: 18px;
         line-height: 24px;
         color: white;
@@ -920,7 +920,7 @@
     .featured-items h3 {
         display: flex;
         flex-direction: column;
-        font-family: 'PT Sans';
+        font-family: 'PT Sans', "Arial", sans-serif;
         font-size: 18px;
         min-height: 40px;
         padding: 0 25px;
@@ -932,7 +932,7 @@
     }
     
     .featured-items del {
-        font-family: 'PT Sans';
+        font-family: 'PT Sans', "Arial", sans-serif;
         font-size: 17px;
         font-weight: bold;
         line-height: 18px;
@@ -1147,6 +1147,7 @@
         height: 522px;
         position: relative;
         margin-top: 85px;
+        overflow: hidden;
     }
     
     .slide {
@@ -1192,13 +1193,6 @@
     .services-toggle label:hover {
         cursor: pointer;
         background-color: #293449;
-    }
-    
-    .services-toggle label:active {
-        background-color: #ffffff;
-        color: #32425c;
-        border-top: 1px solid #ffffff;
-        border-bottom: 1px solid #ffffff;
     }
     
     .services h2 {
@@ -1278,7 +1272,8 @@
     }
     
     #button-2:checked~.right-slider {
-        background: url('../img/guarantee.png') no-repeat 472px -1px;
+        background: url('../img/guarantee.png') no-repeat 555px -1px;
+        background-repeat: no-repeat;
     }
     
     #button-3:checked~.right-slider {
@@ -1891,6 +1886,62 @@
         line-height: 30px;
         color: #000000;
         font-weight: bold;
+        margin-bottom: 21px;
+    }
+    
+    .second-field {
+        margin-bottom: 75px;
+    }
+    
+    .manufacturers-options {
+        padding-left: 35px;
+    }
+    
+    .manufacturers-options label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .filter-input-checkbox+label::before {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 27px;
+        height: 23px;
+        background: url('../img/checkbox-off.svg') no-repeat 0 0;
+    }
+    
+    .filter-input-checkbox:checked+label::after {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 27px;
+        height: 23px;
+        background-image: url('../img/checkbox-on.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    
+    .filter-input-radio+label::before {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 25px;
+        height: 25px;
+        background: url('../img/radio-off.svg') no-repeat 0 0;
+    }
+    
+    .filter-input-radio:checked+label::after {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/radio-on.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
     }
     
     .price {
@@ -1906,12 +1957,27 @@
     }
     /*Офоромление фильтров */
     
+    fieldset {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+    }
+    
     .left-side {
+        font-family: "PT Sans", "Arial", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 220px;
         text-transform: uppercase;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        color: #000000;
+    }
+    
+    .filter {
+        width: inherit;
     }
     
     .left-side li {
@@ -1921,12 +1987,16 @@
         text-align: left;
     }
     
-    fieldset input {
-        margin-left: -51px;
+    .manufacturers,
+    .nutrition {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
-    fieldset legend {
-        margin-left: -12px;
+    .manufacturers li:not(:last-child),
+    .nutrition li:not(:last-child) {
+        margin-bottom: 17px;
     }
     
     .show {
@@ -1935,9 +2005,20 @@
         border: solid 1px #e5e5e5;
         background-color: #ffffff;
         font-size: 13px;
-        font-family: "PTSans", "Arial", sans-serif;
+        font-family: "PT Sans", "Arial", sans-serif;
         line-height: 18px;
         text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .first-field {
+        margin-bottom: 21px;
+    }
+    
+    .line {
+        margin-bottom: 16px;
+        border: 1px solid #e5e5e5;
+        border-bottom-width: 0;
     }
     /*Разметка центральной части */
     
