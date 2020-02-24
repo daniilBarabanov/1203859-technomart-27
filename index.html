@@ -44,7 +44,7 @@
                 <h2 class="invisible">Контактная информация</h2>
                 <div class="header-info">
                     <p>
-                        Интернет-магазин строительных материалов и инструментов для ремонта
+                        Интернет-магазин строительных материалов <br> и инструментов для ремонта
                     </p>
                 </div>
                 <div class="header-numberadress">
@@ -335,6 +335,7 @@
                 <a class="write-us" href="#">Заблудились? Напишите нам!</a>
             </section>
         </div>
+
     </main>
     <footer>
         <section class="footer-top">
@@ -404,8 +405,8 @@
             <input type="text" name="name" id="name" placeholder="Имя Фамилия">
         </form>
     </div>
-    <div class="form-write-us popup invisible">
-        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+    <section class="form-write-us pop">
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form-up">
                 <div class="myname">
                     <label for="yourname"><span>Ваше имя:</span><br></label>
@@ -421,14 +422,16 @@
           </textarea>
                 </div>
             </div>
-            <button class="modal-close" type="button">
+            <div class="form-down">
+                <button type="submit" class="send">Отправить</button>
+            </div>
+        </form>
+        <button class="modal-close" type="button">
                 <span class="invisible">Закрыть</span>
             </button>
-        </form>
-        <div class="form-down">
-            <button type="submit" class="send">Отправить</button>
-        </div>
-    </div>
+    </section>
+    <script src="../1203859-technomart-27/js/script.js">
+    </script>
 </body>
 
 </html>
