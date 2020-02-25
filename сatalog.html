@@ -93,12 +93,30 @@
             <div class="main-block">
                 <div class="left-side">
                     <h2 class="invisible">Фильтр товаров</h2>
-                    <p class="filter-title">Фильтр:</p>
-                    <label class="filter-sort" for="rangeprice">Цена:</label>
-                    <form class="pricerange" action="https://echo.htmlacademy.ru" method="POST">
-                        <input type="range" name="rangeprice" id="rangeprice" min="0" max="30000" step="1">
+                    <article class="filter-first">
+                        <h2 class="invisible">Фильтр товаров</h2>
+                        <span>Фильтр:</span>
+                    </article>
+                    <label class="filter-sort" for="min-price">Цена:</label>
+                    <form method="get" action="https://echo.htmlacademy.ru/%22%3E">
+                        <fieldset class="filter-item">
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                                    <span>—</span>
+                                    <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+                                </div>
+                            </div>
+                        </fieldset>
                     </form>
-                    <p>0 - 30000</p>
+                    <hr class="line">
                     <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
                         <fieldset class="first-field">
                             <legend class="filter-sort">Производители:</legend>
