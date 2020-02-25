@@ -1889,6 +1889,8 @@
         margin-bottom: 21px;
     }
     
+    article.filter-first {
+        display: flex;
         align-items: center;
         width: 220px;
         height: 38px;
