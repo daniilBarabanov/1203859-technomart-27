@@ -1198,7 +1198,6 @@
     .services h2 {
         font-size: 30px;
         line-height: 30px;
-        margin-top: 50px;
     }
     
     .services-header {
@@ -1277,7 +1276,7 @@
     }
     
     #button-3:checked~.right-slider {
-        background: url('../img/credit.png') no-repeat 472px -10px;
+        background: url('../img/credit.png') no-repeat 472px 10px;
     }
     
     .button-a {
@@ -1295,6 +1294,13 @@
         border-radius: 4px;
         text-transform: uppercase;
         margin-top: 31px;
+    }
+    .button-a:hover {
+        background-color: #ca2c37;
+    }
+    
+    .button-a:active {
+        background-color: #ba2732;
     }
     
     #button-1:checked~.right-slider #slide1,
@@ -1528,6 +1534,10 @@
     .nav-foot-one li:hover {
         text-decoration: underline;
     }
+    .nav-foot-one li:active {
+        text-decoration: none;
+        opacity: 0.5;
+    }
     
     .nav-foot-two {
         padding: 0;
@@ -1548,6 +1558,10 @@
     .nav-foot-two li:hover {
         text-decoration: underline;
         color: #ffd180;
+    }
+    .nav-foot-two li:active {
+        text-decoration: none;
+        opacity: 0.5;
     }
     /*Оформление нижней части футера */
     
@@ -1627,17 +1641,17 @@
         font-family: "Cuprum", "Arial", sans-serif;
         color: #ffd180;
     }
-    
-    .feedback a:active {
-        color: #ee3643;
-    }
-    
+
     .developed {
         margin-left: 53px;
     }
     
     .feedback a:hover {
         text-decoration: underline;
+    }
+    .feedback a:active {
+        color: #ee3643;
+        text-decoration: none;
     }
     /* Разметка каталога начинается тут */
     /*Шапка каталога */
@@ -1928,6 +1942,16 @@
         width: 27px;
         height: 23px;
         background: url('../img/checkbox-off.svg') no-repeat 0 0;
+        opacity: 0.8;
+    }
+    .filter-input-checkbox+label:hover::before {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 27px;
+        height: 23px;
+        background: url('../img/checkbox-off.svg') no-repeat 0 0;
+        opacity: 1;
     }
     
     .filter-input-checkbox:checked+label::after {
@@ -1939,7 +1963,20 @@
         background-image: url('../img/checkbox-on.svg');
         background-repeat: no-repeat;
         background-position: 0 0;
+        opacity: 0.8;
     }
+    .filter-input-checkbox:checked+label:hover::after {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 27px;
+        height: 23px;
+        background-image: url('../img/checkbox-on.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        opacity: 1;
+    }
+
     
     .filter-input-radio+label::before {
         content: "";
@@ -1948,6 +1985,16 @@
         width: 25px;
         height: 25px;
         background: url('../img/radio-off.svg') no-repeat 0 0;
+        opacity: 0.8;
+    }
+    .filter-input-radio+label:hover::before {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 25px;
+        height: 25px;
+        background: url('../img/radio-off.svg') no-repeat 0 0;
+        opacity: 1;
     }
     
     .filter-input-radio:checked+label::after {
@@ -1959,6 +2006,18 @@
         background-image: url('../img/radio-on.svg');
         background-repeat: no-repeat;
         background-position: 0 0;
+        opacity: 0.8;
+    }
+    .filter-input-radio:checked+label:hover::after {
+        content: "";
+        position: absolute;
+        left: -35px;
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/radio-on.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        opacity: 1;
     }
     
     .price {
@@ -2347,6 +2406,10 @@
     .pagination li:active {
         border: solid 1px #ee3643;
     }
+    .pagination .pagination-active {
+        background-color: red;
+        color:white;
+    }
     /*Разметка Пары слов */
     
     .some-words {
@@ -2405,7 +2468,6 @@
     .form-write-us input:-ms-input-placeholder {
         color: #a9a9a9;
     }
-    
     .form-write-us input[type=text],
     .form-write-us input[type=email] {
         width: 216px;
@@ -2413,18 +2475,42 @@
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
         text-align: left;
-        color: #999;
+        color: #b5b5b5;
         background: #fff;
-        border: 2px solid #999;
+        border: 2px solid #b5b5b5;
         border-radius: 5px;
         margin-top: 12px;
+        outline: none;
     }
-    
+    .form-write-us input[type=text]:focus,
+    .form-write-us input[type=email]:focus {
+        width: 216px;
+        height: 34px;
+        font-size: 13px;
+        font-family: "PT Sans", "Arial", sans-serif;
+        text-align: left;
+        color: #b5b5b5;
+        background: #fff;
+        border: 2px solid #ee3643;
+        border-radius: 5px;
+        margin-top: 12px;
+        outline: none;
+    }
     .form-write-us textarea {
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
         color: #a9a9a9;
         border: 3px solid #d7dcde;
+        border-radius: 3px;
+        outline: 0;
+        width: 454px;
+        min-height: 114px;
+    }
+    .form-write-us textarea:focus {
+        font-size: 13px;
+        font-family: "PT Sans", "Arial", sans-serif;
+        color: #a9a9a9;
+        border: 2px solid #ee3643;
         border-radius: 3px;
         outline: 0;
         width: 454px;
@@ -2456,7 +2542,7 @@
     
     .myname,
     .mymail {
-        height: 64px;
+        height: 69px;
     }
     
     .mytext textarea {
@@ -2471,6 +2557,7 @@
         top: 6px;
         border: 0;
         cursor: pointer;
+        z-index: 100;
     }
     
     .modal-close::before,
@@ -2525,16 +2612,141 @@
     .send:active {
         background-color: #ba2732;
     }
-    
+    /*Всплывающая карта */
+    .modal-map {
+        display: none;
+        position: fixed;
+        color: #000000;
+        background-color: #ffffff;
+        width: 940px;
+        min-height: 447px;
+        box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+        z-index: 100;
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: normal;
+        top: 5%;
+        left: 43.5%;
+      
+        width: 940px;
+        height: 446.2px;
+        margin-left: -390px;
+        z-index: 99;
+      }
+      .modal-map p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+      
+        margin: 0;
+      }
+      .modal-map iframe {
+          position: relative;
+          z-index: 100;
+          border:none;
+      }
+      .modal-login {
+        display: none;
+        position: fixed;
+        color: #000000;
+        background-color: #ffffff;
+        width: 620px;
+        min-height: 430px;
+        box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+        z-index: 100;
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: normal;
+        top: 5%;
+        left: 43.5%;
+      
+        width: 940px;
+        height: 446.2px;
+        margin-left: -390px;
+        z-index: 99;
+      }
+    .pop-buy {
+        color: #000000;
+        background-color: #ffffff;
+        width: 620px;
+        min-height: 275px;
+        border-top: 7px solid #ee3643;
+        box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+        z-index: 100;
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+    .buy-top span {
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        margin-top:79px;
+    }
+
+
+
+
+
+    .buy-top {
+        height:163px;
+    }
+    .buy-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:112px;
+        background-color: #f1f1f1;
+    }
+    .order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 38px;
+        font-size: 14px;
+        font-family: "Cuprum", "Arial", sans-serif;
+        background-color: #ee3643;
+        color: #ffffff;
+        float: left;
+        text-align: center;
+        border-radius: 4px;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+    .order:hover {
+        background-color: #ca2c37;
+    }
+    .continue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 38px;
+        font-size: 14px;
+        font-family: "Cuprum", "Arial", sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+        float: left;
+        text-align: center;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+    .order:active {
+        background-color: #ba2732;
+    }
     .modal-show {
         display: block;
-        animation: bounce 0.6s;
+        animation: bounce 0.5s;
     }
     
     .modal-error {
         animation: shake 0.6s;
     }
-    
     @keyframes bounce {
         0% {
             transform: translateY(-2000px);
