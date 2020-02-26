@@ -1295,6 +1295,7 @@
         text-transform: uppercase;
         margin-top: 31px;
     }
+    
     .button-a:hover {
         background-color: #ca2c37;
     }
@@ -1534,6 +1535,7 @@
     .nav-foot-one li:hover {
         text-decoration: underline;
     }
+    
     .nav-foot-one li:active {
         text-decoration: none;
         opacity: 0.5;
@@ -1559,6 +1561,7 @@
         text-decoration: underline;
         color: #ffd180;
     }
+    
     .nav-foot-two li:active {
         text-decoration: none;
         opacity: 0.5;
@@ -1641,7 +1644,7 @@
         font-family: "Cuprum", "Arial", sans-serif;
         color: #ffd180;
     }
-
+    
     .developed {
         margin-left: 53px;
     }
@@ -1649,6 +1652,7 @@
     .feedback a:hover {
         text-decoration: underline;
     }
+    
     .feedback a:active {
         color: #ee3643;
         text-decoration: none;
@@ -1944,6 +1948,7 @@
         background: url('../img/checkbox-off.svg') no-repeat 0 0;
         opacity: 0.8;
     }
+    
     .filter-input-checkbox+label:hover::before {
         content: "";
         position: absolute;
@@ -1965,6 +1970,7 @@
         background-position: 0 0;
         opacity: 0.8;
     }
+    
     .filter-input-checkbox:checked+label:hover::after {
         content: "";
         position: absolute;
@@ -1976,7 +1982,6 @@
         background-position: 0 0;
         opacity: 1;
     }
-
     
     .filter-input-radio+label::before {
         content: "";
@@ -1987,6 +1992,7 @@
         background: url('../img/radio-off.svg') no-repeat 0 0;
         opacity: 0.8;
     }
+    
     .filter-input-radio+label:hover::before {
         content: "";
         position: absolute;
@@ -2008,6 +2014,7 @@
         background-position: 0 0;
         opacity: 0.8;
     }
+    
     .filter-input-radio:checked+label:hover::after {
         content: "";
         position: absolute;
@@ -2406,9 +2413,10 @@
     .pagination li:active {
         border: solid 1px #ee3643;
     }
+    
     .pagination .pagination-active {
         background-color: red;
-        color:white;
+        color: white;
     }
     /*Разметка Пары слов */
     
@@ -2468,6 +2476,7 @@
     .form-write-us input:-ms-input-placeholder {
         color: #a9a9a9;
     }
+    
     .form-write-us input[type=text],
     .form-write-us input[type=email] {
         width: 216px;
@@ -2482,6 +2491,7 @@
         margin-top: 12px;
         outline: none;
     }
+    
     .form-write-us input[type=text]:focus,
     .form-write-us input[type=email]:focus {
         width: 216px;
@@ -2496,6 +2506,7 @@
         margin-top: 12px;
         outline: none;
     }
+    
     .form-write-us textarea {
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
@@ -2506,6 +2517,7 @@
         width: 454px;
         min-height: 114px;
     }
+    
     .form-write-us textarea:focus {
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
@@ -2613,6 +2625,7 @@
         background-color: #ba2732;
     }
     /*Всплывающая карта */
+    
     .modal-map {
         display: none;
         position: fixed;
@@ -2628,80 +2641,78 @@
         font-weight: normal;
         top: 5%;
         left: 43.5%;
-      
         width: 940px;
         height: 446.2px;
         margin-left: -390px;
         z-index: 99;
-      }
-      .modal-map p {
+    }
+    
+    .modal-map p {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 20;
-      
         margin: 0;
-      }
-      .modal-map iframe {
-          position: relative;
-          z-index: 100;
-          border:none;
-      }
-      .modal-login {
+    }
+    
+    .modal-map iframe {
+        position: relative;
+        z-index: 100;
+        border: none;
+    }
+    
+    .pop-buy {
         display: none;
         position: fixed;
-        color: #000000;
-        background-color: #ffffff;
-        width: 620px;
-        min-height: 430px;
-        box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
-        z-index: 100;
-        font-family: "Cuprum", "Arial", sans-serif;
-        font-size: 18px;
-        line-height: 18px;
-        font-weight: normal;
-        top: 5%;
-        left: 43.5%;
-      
-        width: 940px;
-        height: 446.2px;
-        margin-left: -390px;
-        z-index: 99;
-      }
-    .pop-buy {
         color: #000000;
         background-color: #ffffff;
         width: 620px;
         min-height: 275px;
         border-top: 7px solid #ee3643;
         box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-        z-index: 100;
+        z-index: 200;
         font-family: "Cuprum", "Arial", sans-serif;
         font-size: 18px;
         line-height: 18px;
         font-weight: normal;
+        top: 5%;
+        left: 33.5%;
     }
+    
+    .buy-top {
+        height: 163px;
+        position: relative;
+    }
+    
     .buy-top span {
+        position: absolute;
         font-family: "Cuprum", "Arial", sans-serif;
         font-size: 30px;
         line-height: 30px;
-        margin-top:79px;
+        margin-top: 78px;
+        margin-left: 178px;
     }
-
-
-
-
-
-    .buy-top {
-        height:163px;
+    
+    .buy-top span::before {
+        content: "";
+        position: absolute;
+        width: 66px;
+        height: 66px;
+        top: -20px;
+        left: -100px;
+        background-image: url('../img/modal-check.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
     }
+    
     .buy-bottom {
         display: flex;
         justify-content: center;
         align-items: center;
-        height:112px;
+        height: 112px;
         background-color: #f1f1f1;
     }
+    
     .order {
         display: flex;
         justify-content: center;
@@ -2718,9 +2729,15 @@
         text-transform: uppercase;
         margin-right: 20px;
     }
+    
     .order:hover {
         background-color: #ca2c37;
     }
+    
+    .order:active {
+        background-color: #ba2732;
+    }
+    
     .continue {
         display: flex;
         justify-content: center;
@@ -2736,9 +2753,11 @@
         border-radius: 4px;
         text-transform: uppercase;
     }
-    .order:active {
-        background-color: #ba2732;
+    
+    .continue:hover {
+        background-color: #ca2c37;
     }
+    
     .modal-show {
         display: block;
         animation: bounce 0.5s;
@@ -2747,6 +2766,37 @@
     .modal-error {
         animation: shake 0.6s;
     }
+    
+    .modal-close {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        right: 6px;
+        top: 6px;
+        border: 0;
+        cursor: pointer;
+        z-index: 100;
+    }
+    
+    .modal-close::before,
+    .modal-close::after {
+        content: "";
+        position: absolute;
+        width: 26px;
+        height: 4px;
+        background-color: #ee3643;
+        top: 9px;
+        left: -3px;
+    }
+    
+    .modal-close::before {
+        transform: rotate(45deg);
+    }
+    
+    .modal-close::after {
+        transform: rotate(-45deg);
+    }
+    
     @keyframes bounce {
         0% {
             transform: translateY(-2000px);
