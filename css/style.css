@@ -2263,6 +2263,9 @@
     .filters-block li:nth-child(4) {
         margin-left: 46px;
     }
+    .filters-button path:hover{
+        fill:#000000;
+    }
     
     .filters-block li:nth-child(5) {
         opacity: 0.3;
