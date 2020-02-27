@@ -1869,13 +1869,7 @@
         margin-left: 30px;
     }
     
-    .filters-block {
-        width: 700px;
-        height: 38px;
-        display: flex;
-        align-items: center;
-        background-color: #f7f3ec;
-    }
+
     
     .filters:hover {
         color: black;
@@ -2214,37 +2208,56 @@
         width: 700px;
         margin-left: 20px;
     }
-    
+    .filters-block {
+        width: 700px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        background-color: #f7f3ec;
+    }
     .filters-block ul {
         display: flex;
         margin: 0;
         align-items: center;
         padding-left: 0;
     }
+    .filters-block li {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 19px;
+    }
     
-    .filters-block button {
+    .filters-block a {
         font-family: 'PT Sans', "Arial", sans-serif;
         font-size: 13px;
         text-align: left;
         text-transform: uppercase;
     }
+    .filters-block li:hover:first-child {
+        border-bottom: 1px solid #ee3643;
+    }
     
     .filters-block li:nth-child(2) {
         opacity: 0.3;
         margin-left: 71px;
+        border-bottom: 1px dashed #ee3643;
     }
     
     .filters-block li:hover:nth-child(2) {
         opacity: 1;
+        border-bottom: 1px solid #ee3643;
     }
     
     .filters-block li:nth-child(3) {
         opacity: 0.3;
         margin-left: 65px;
+        border-bottom: 1px dashed #ee3643;
     }
     
     .filters-block li:hover:nth-child(3) {
         opacity: 1;
+        border-bottom: 1px solid #ee3643;
     }
     
     .filters-block li:nth-child(4) {
@@ -2545,7 +2558,7 @@
     
     .pop {
         top: 5%;
-        left: 33.5%;
+        left: 29%;
     }
     
     .myname {
@@ -2640,7 +2653,7 @@
         line-height: 18px;
         font-weight: normal;
         top: 5%;
-        left: 43.5%;
+        left: 44.45%;
         width: 940px;
         height: 446.2px;
         margin-left: -390px;
@@ -2676,7 +2689,7 @@
         line-height: 18px;
         font-weight: normal;
         top: 5%;
-        left: 33.5%;
+        left: 29%;
     }
     
     .buy-top {
