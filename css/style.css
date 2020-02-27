@@ -1869,8 +1869,6 @@
         margin-left: 30px;
     }
     
-
-    
     .filters:hover {
         color: black;
     }
@@ -2023,14 +2021,6 @@
     
     .price {
         color: #ee3643;
-    }
-    
-    .dotted {
-        text-decoration: underline dotted #ee3643;
-    }
-    
-    .dotted:hover {
-        text-decoration: underline #ee3643;
     }
     /*Офоромление фильтров */
     
@@ -2208,6 +2198,7 @@
         width: 700px;
         margin-left: 20px;
     }
+    
     .filters-block {
         width: 700px;
         height: 38px;
@@ -2215,16 +2206,18 @@
         align-items: center;
         background-color: #f7f3ec;
     }
+    
     .filters-block ul {
         display: flex;
         margin: 0;
         align-items: center;
         padding-left: 0;
     }
+    
     .filters-block li {
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         height: 19px;
     }
     
@@ -2234,6 +2227,7 @@
         text-align: left;
         text-transform: uppercase;
     }
+    
     .filters-block li:hover:first-child {
         border-bottom: 1px solid #ee3643;
     }
@@ -2263,8 +2257,9 @@
     .filters-block li:nth-child(4) {
         margin-left: 46px;
     }
-    .filters-button path:hover{
-        fill:#000000;
+    
+    .filters-button path:hover {
+        fill: #000000;
     }
     
     .filters-block li:nth-child(5) {
