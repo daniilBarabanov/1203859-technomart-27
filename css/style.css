@@ -2488,9 +2488,13 @@
         color: #a9a9a9;
     }
     
+    textarea::-webkit-input-placeholder {
+        color: #a9a9a9;
+    }
+    
     .form-write-us input[type=text],
     .form-write-us input[type=email] {
-        width: 216px;
+        width: 206px;
         height: 34px;
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
@@ -2501,11 +2505,12 @@
         border-radius: 5px;
         margin-top: 12px;
         outline: none;
+        padding-left: 10px;
     }
     
     .form-write-us input[type=text]:focus,
     .form-write-us input[type=email]:focus {
-        width: 216px;
+        width: 206px;
         height: 34px;
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
@@ -2522,11 +2527,12 @@
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
         color: #a9a9a9;
-        border: 3px solid #d7dcde;
+        border: 2px solid #d7dcde;
         border-radius: 3px;
         outline: 0;
         width: 454px;
         min-height: 114px;
+        padding-left: 12px;
     }
     
     .form-write-us textarea:focus {

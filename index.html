@@ -410,16 +410,15 @@
             <div class="form-up">
                 <div class="myname">
                     <label for="yourname"><span>Ваше имя:</span><br></label>
-                    <input type="text" class="input-name" name="yourname" id="yourname" placeholder="Имя Фамилия"><br>
+                    <input type="text" class="input-name" name="yourname" id="yourname" placeholder="Имя Фамилия" onfocus="placeholder='';" onblur="placeholder='Имя Фамилия';"><br>
                 </div>
                 <div class="mymail">
                     <label class="input-mail" for="youremail"><span>Ваш e-mail:</span><br></label>
-                    <input type="email" class="input-mail" name="youremail" id="youremail" placeholder="email@example.com"><br>
+                    <input type="email" class="input-mail" name="youremail" id="youremail" placeholder="email@example.com" onfocus="placeholder='';" onblur="placeholder='email@example.com';"><br>
                 </div>
                 <div class="mytext">
                     <label for="yourmail"><span>Текст письма:</span></label><br>
-                    <textarea class="input-area" name="yourmail" id="yourmail" rows="6" cols="61" placeholder="В свободной форме">
-          </textarea>
+                    <textarea class="input-area" name="yourmail" id="yourmail" rows="6" cols="61" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
                 </div>
             </div>
             <div class="form-down">
