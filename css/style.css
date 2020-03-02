@@ -1951,7 +1951,7 @@
         opacity: 1;
     }
     
-    .filter-input-checkbox:checked+label::after {
+    .filter-input-checkbox:checked+label::before {
         content: "";
         position: absolute;
         left: -35px;
