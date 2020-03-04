@@ -147,6 +147,8 @@
         width: 270px;
         padding-left: 49px;
         cursor: pointer;
+        padding-top: 14px;
+        padding-bottom: 16px;
     }
     
     .searchform input:hover {
@@ -223,7 +225,7 @@
     }
     
     .header-top span {
-        margin-left: 44px;
+        margin-left: 50px;
     }
     
     .header-top li:first-child::before {
@@ -232,7 +234,7 @@
         width: 14px;
         height: 16px;
         top: 12px;
-        left: 13px;
+        right: 119px;
         background-image: url('../img/icon-bookmark.svg');
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -319,16 +321,22 @@
         font-style: italic;
         line-height: 23px;
         color: #ee3643;
-        width: 196px;
+        width: 198px;
         height: 60px;
         margin-left: 53px;
         text-align: left;
+        padding-top: 10px;
     }
     
     .header-numberadress {
         width: 270px;
         height: 68px;
         margin-left: 71px;
+        padding-top: 10px;
+    }
+    
+    .phone-container {
+        border: 3px solid #ffffff;
     }
     
     .number {
@@ -338,13 +346,15 @@
         font-family: "Cuprum", "Arial", sans-serif;
         line-height: 21px;
         padding-left: 74px;
+        padding-bottom: 8px;
     }
     
     .adress {
         font-size: 14px;
         color: #32425c;
         line-height: 24px;
-        padding-top: 21px;
+        padding-top: 6px;
+        padding-left: 10px;
     }
     
     .number::before {
@@ -1144,10 +1154,9 @@
     
     .services {
         background-color: #f4f7f9;
-        height: 522px;
+        min-height: 522px;
         position: relative;
         margin-top: 85px;
-        overflow: hidden;
     }
     
     .slide {
@@ -1695,6 +1704,9 @@
         padding-left: 47px;
         padding-right: 59px;
         cursor: pointer;
+        padding-top: 14px;
+        padding-bottom: 11px;
+        background-color: #ffffff;
     }
     
     .user-profile:active {
@@ -1725,8 +1737,7 @@
         position: absolute;
         content: '';
         right: 10px;
-        top: 2px;
-        width: 20px;
+        width: 22px;
         height: 17px;
         background-image: url('../img/icon-logout.svg');
         cursor: pointer;
@@ -1736,7 +1747,6 @@
         position: absolute;
         content: '';
         right: 10px;
-        top: 2px;
         width: 20px;
         height: 17px;
         background-image: url('../img/icon-logout.png');
