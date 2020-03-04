@@ -1210,6 +1210,7 @@
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
         margin-top: 38px;
+        width: 398px;
     }
     
     .span-header {
@@ -1312,10 +1313,12 @@
     
     .service-about-1 {
         margin-top: 34px;
+        width: 275px;
     }
     
     .service-about-2 {
         margin-top: 38px;
+        width: 379px;
     }
     /*Оформление секции о компании и контакты */
     
@@ -1335,11 +1338,12 @@
         font-family: "Cuprum", "Arial", sans-serif;
         margin-top: 82px;
         font-weight: normal;
+        margin-bottom: 39px;
     }
     
     .about-us p {
         font-size: 13px;
-        font-family: "PTSans", "Arial", sans-serif;
+        font-family: "PT Sans", "Arial", sans-serif;
     }
     
     .about-us-p1 {
@@ -1348,7 +1352,11 @@
         letter-spacing: normal;
         line-height: 24px;
         width: 550px;
-        margin-bottom: 36px;
+        margin-bottom: 28px;
+    }
+    
+    .about-us-p2 {
+        width: 386px;
     }
     
     .companies {
@@ -1418,6 +1426,7 @@
         font-weight: normal;
         text-transform: uppercase;
         margin-top: 82px;
+        margin-bottom: 39px;
     }
     
     .contacts {
@@ -1431,13 +1440,15 @@
         font-size: 13px;
         font-family: "PT Sans", "Arial", sans-serif;
         text-align: left;
-        margin-bottom: 40px;
+        margin-bottom: 36px;
         letter-spacing: normal;
         line-height: 24px;
+        width: 179px;
     }
     
-    .contacts img {
-        margin-bottom: 20px;
+    .route {
+        height: 158px;
+        margin-top: 1px;
     }
     
     .write-us {
@@ -1454,6 +1465,7 @@
         text-align: center;
         border-radius: 4px;
         text-transform: uppercase;
+        margin-top: 47px;
     }
     
     .write-us:hover {
