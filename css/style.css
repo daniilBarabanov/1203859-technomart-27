@@ -1695,6 +1695,11 @@
         display: flex;
     }
     
+    .user-control {
+        margin-top: 5px;
+        padding-left: 17px;
+    }
+    
     .user-profile {
         position: relative;
         font-size: 21px;
@@ -1736,8 +1741,9 @@
     .user-profile::after {
         position: absolute;
         content: '';
+        top: 16px;
         right: 10px;
-        width: 22px;
+        width: 21px;
         height: 17px;
         background-image: url('../img/icon-logout.svg');
         cursor: pointer;
@@ -1746,6 +1752,7 @@
     .user-profile:hover::after {
         position: absolute;
         content: '';
+        top: 16px;
         right: 10px;
         width: 20px;
         height: 17px;
@@ -1779,10 +1786,10 @@
         display: inline-block;
         width: 5px;
         height: 5px;
-        margin-top: 27px;
         margin-left: 15px;
         background: #32425c;
         border-radius: 50px;
+        margin-bottom: 2px;
     }
     
     .my-profile {
