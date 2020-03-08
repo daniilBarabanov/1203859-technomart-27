@@ -63,6 +63,7 @@
             </div>
         </section>
         <section class="lower-header">
+            <h2 class="invisible">Навигация сайта</h2>
             <div class="container">
                 <nav class="header-bottom">
                     <ul class="navigation">
@@ -93,35 +94,35 @@
                                 <span>Инструмент</span>
                                 <a class="block" href="#">На все случаи</a>
                             </li>
-                            <div class="slider">
-                                <input type="radio" id="btn1" name="toggle" checked>
-                                <input type="radio" id="btn2" name="toggle">
-                                <div class="switch">
-                                    <label for="btn1"></label>
-                                    <label for="btn2"></label>
-                                </div>
-                                <div class="slides">
-                                    <div class="slider-inner">
-                                        <span id="item-1"></span>
-                                        <span id="item-2"></span>
-                                        <div class="carousel-item item-1" id="dada-1">
-                                            <h2 class="slider-drills">ДРЕЛИ</h2>
-                                            <p>Соседям на радость!</p>
-                                            <a class="arrow arrow-prev" href="#item-2"></a>
-                                            <a class="arrow arrow-next" href="#item-2"></a>
-                                            <a class="open-catalog" href="catalog.html">Открыть каталог</a>
-                                        </div>
-                                        <div class="carousel-item item-2" id="dada-2">
-                                            <h2 class="slider-drills">ПЕРФОРАТОРЫ</h2>
-                                            <p>Настоящие мужские игрушки</p>
-                                            <a class="arrow arrow-prev" href="#item-1"></a>
-                                            <a class="arrow arrow-next" href="#item-1"></a>
-                                            <a class="open-catalog" href="catalog.html">Открыть каталог</a>
-                                        </div>
+                        </ul>
+                        <div class="slider">
+                            <input type="radio" id="btn1" name="toggle" checked>
+                            <input type="radio" id="btn2" name="toggle">
+                            <div class="switch">
+                                <label for="btn1"></label>
+                                <label for="btn2"></label>
+                            </div>
+                            <div class="slides">
+                                <div class="slider-inner">
+                                    <span id="item-1"></span>
+                                    <span id="item-2"></span>
+                                    <div class="carousel-item item-1" id="dada-1">
+                                        <h2 class="slider-drills">ДРЕЛИ</h2>
+                                        <p>Соседям на радость!</p>
+                                        <a class="arrow arrow-prev" href="#item-2"></a>
+                                        <a class="arrow arrow-next" href="#item-2"></a>
+                                        <a class="open-catalog" href="catalog.html">Открыть каталог</a>
+                                    </div>
+                                    <div class="carousel-item item-2" id="dada-2">
+                                        <h2 class="slider-drills">ПЕРФОРАТОРЫ</h2>
+                                        <p>Настоящие мужские игрушки</p>
+                                        <a class="arrow arrow-prev" href="#item-1"></a>
+                                        <a class="arrow arrow-next" href="#item-1"></a>
+                                        <a class="open-catalog" href="catalog.html">Открыть каталог</a>
                                     </div>
                                 </div>
                             </div>
-                        </ul>
+                        </div>
                     </div>
                     <div class="right-colorful">
                         <ul>
@@ -143,6 +144,9 @@
             </div>
         </section>
         <section class="catalog-items">
+            <h2 class="invisible">
+                Каталог популярных товаров
+            </h2>
             <div class="container">
                 <div class="popgoodsdiv">
                     <span class="populargoods">Популярные товары:</span>
@@ -189,6 +193,7 @@
                         </div>
                     </article>
                 </div>
+            </div>
         </section>
         <section class="popmanufacturers">
             <div class="container">
@@ -266,7 +271,7 @@
                         <li class="services-slides slide " id="slide2">
                             <span class="span-header">Гарантия</span>
                             <p class="service-about-2">
-                                Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.
+                                Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
                                 <br> Дом уж восстановите как-нибудь сами.
                             </p>
                         </li>
@@ -378,18 +383,21 @@
         </form>
     </div>
     <section class="form-write-us pop">
+        <h2 class="invisible">
+            Форма связи с нами
+        </h2>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form-up">
                 <div class="myname">
-                    <label for="yourname"><span>Ваше имя:</span><br></label>
-                    <input type="text" class="input-name" name="yourname" id="yourname" placeholder="Имя Фамилия" onfocus="placeholder='';" onblur="placeholder='Имя Фамилия';"><br>
+                    <label for="yourname"><span>Ваше имя:</span></label>
+                    <input type="text" class="input-name" name="yourname" id="yourname" placeholder="Имя Фамилия" onfocus="placeholder='';" onblur="placeholder='Имя Фамилия';">
                 </div>
                 <div class="mymail">
-                    <label class="input-mail" for="youremail"><span>Ваш e-mail:</span><br></label>
-                    <input type="email" class="input-mail" name="youremail" id="youremail" placeholder="email@example.com" onfocus="placeholder='';" onblur="placeholder='email@example.com';"><br>
+                    <label class="input-mail" for="youremail"><span>Ваш e-mail:</span></label>
+                    <input type="email" class="input-mail" name="youremail" id="youremail" placeholder="email@example.com" onfocus="placeholder='';" onblur="placeholder='email@example.com';">
                 </div>
                 <div class="mytext">
-                    <label for="yourmail"><span>Текст письма:</span></label><br>
+                    <label for="yourmail"><span>Текст письма:</span></label>
                     <textarea class="input-area" name="yourmail" id="yourmail" rows="6" cols="61" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
                 </div>
             </div>
@@ -404,13 +412,16 @@
     <section class="modal-map">
         <h2 class="invisible">Как до нас добраться</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582711021796!5m2!1sru!2sru"
-            width="940" height="446.2" allowfullscreen=""></iframe>
-        <p><img src="img/map1.png" width="940" height="446.2" alt="Магазин находится по адресу ул. Большая конюшенная д. 19/8, Санкт - Петербург "></p>
+            width="940" height="446" allowfullscreen=""></iframe>
+        <p><img src="img/map1.png" width="940" height="446" alt="Магазин находится по адресу ул. Большая конюшенная д. 19/8, Санкт - Петербург "></p>
         <button class="modal-close" type="button">
             <span class="invisible">Закрыть</span>
         </button>
     </section>
     <section class="pop-buy">
+        <h2 class="invisible">
+            Окно добавления товара в корзину
+        </h2>
         <div class="buy-top">
             <span>Товар добавлен в корзину!</span>
         </div>

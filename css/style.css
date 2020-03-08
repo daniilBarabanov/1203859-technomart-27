@@ -86,7 +86,7 @@
     }
     
     .techmart-logo {
-        display: flex;
+        position: relative;
         background-color: #ee3643;
         box-shadow: 0 5px 0 0 #b52933;
         text-align: center;
@@ -94,6 +94,7 @@
     
     .techmart-logo img {
         margin: auto;
+        padding-top: 13px;
         padding-left: 55px;
         padding-right: 56px;
     }
@@ -309,8 +310,8 @@
         display: flex;
         background-color: #f4f7f9;
         min-height: 158px;
+        height: 100px;
         align-items: center;
-        justify-content: center;
     }
     
     .header-info {
@@ -442,7 +443,8 @@
     }
     
     .header-bottom {
-        box-shadow: 0 5px 0 0 #293449;
+        position: relative;
+        border-bottom: 5px solid #293449;
         height: 55px;
         font-size: 17px;
         color: white;
@@ -573,6 +575,7 @@
         width: 60px;
         height: 59px;
         left: 240px;
+        top: 1px;
         background-image: url('../img/new-flag.png');
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -939,6 +942,7 @@
         line-height: 20px;
         font-weight: bold;
         text-align: center;
+        width: 80%;
     }
     
     .featured-items del {
@@ -985,7 +989,8 @@
     }
     
     .special-drill h3 {
-        margin-bottom: 43px;
+        margin-bottom: 36px;
+        margin-top: 10px;
     }
     
     .special-drill::after {
@@ -994,6 +999,7 @@
         width: 60px;
         height: 59px;
         left: 159px;
+        top: 1px;
         background-image: url('../img/new-flag.png');
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -1528,6 +1534,8 @@
         font-size: 18px;
         margin-top: 32px;
         margin-bottom: 53px;
+        width: 340px;
+        font-weight: normal;
     }
     
     .navigation-footer {
@@ -1601,7 +1609,7 @@
         color: #ffffff;
         font-size: 16px;
         margin-top: 39px;
-        min-width: 228px;
+        max-width: 228px;
     }
     
     .social ul {
@@ -2455,7 +2463,7 @@
     }
     
     .pagination .pagination-active {
-        background-color: red;
+        background-color: #ee3643;
         color: white;
     }
     /*Разметка Пары слов */
@@ -2475,6 +2483,7 @@
     }
     
     .about-drills {
+        width: 911px;
         font-family: "PT Sans", "Arial", sans-serif;
         font-size: 13px;
         line-height: 24px;
@@ -2595,12 +2604,17 @@
     }
     
     .myname {
+        width: 220px;
         margin-right: 20px;
     }
     
     .myname,
     .mymail {
         height: 69px;
+    }
+    
+    .mymail {
+        width: 220px;
     }
     
     .mytext textarea {
