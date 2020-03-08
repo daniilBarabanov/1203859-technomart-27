@@ -682,7 +682,6 @@
     .slides img {
         width: 620px;
         height: 266px;
-        float: left;
     }
     
     .open-catalog {
@@ -714,7 +713,7 @@
         background-image: url('../img/slide-image2.jpg');
     }
     
-    #btn2:checked~.slides .slider-inner .item-1 .slider-drills {
+    #btn2:checked~.slides .slider-inner .item-2 {
         transform: translate(0);
     }
     
@@ -781,6 +780,11 @@
     #item-3:target~.item-3 {
         z-index: 3;
         opacity: 1;
+    }
+    
+    #btn1:checked~.right-slider #slide1,
+    #btn2:checked~.right-slider #slide2 {
+        display: block;
     }
     
     .right-colorful {
