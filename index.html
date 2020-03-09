@@ -87,55 +87,47 @@
                     <div class="left-colorful">
                         <ul>
                             <li class="newmaterials">
-                                <span>Материалы</span>
+                                <span class="title-of-blocks">Материалы</span>
                                 <a class="block" href="#">На любой вкус</a>
                             </li>
                             <li class="newtools">
-                                <span>Инструмент</span>
+                                <span class="title-of-blocks">Инструмент</span>
                                 <a class="block" href="#">На все случаи</a>
                             </li>
                         </ul>
                         <div class="slider">
-                            <input type="radio" id="btn1" name="toggle" checked>
-                            <input type="radio" id="btn2" name="toggle">
-                            <div class="switch">
-                                <label for="btn1"></label>
-                                <label for="btn2"></label>
+                            <div class="slider-dots">
+                                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
                             </div>
-                            <div class="slides">
-                                <div class="slider-inner">
-                                    <span id="item-1"></span>
-                                    <span id="item-2"></span>
-                                    <div class="carousel-item item-1" id="dada-1">
-                                        <h2 class="slider-drills">ДРЕЛИ</h2>
-                                        <p>Соседям на радость!</p>
-                                        <a class="arrow arrow-prev" href="#item-2"></a>
-                                        <a class="arrow arrow-next" href="#item-2"></a>
-                                        <a class="open-catalog" href="catalog.html">Открыть каталог</a>
-                                    </div>
-                                    <div class="carousel-item item-2" id="dada-2">
-                                        <h2 class="slider-drills">ПЕРФОРАТОРЫ</h2>
-                                        <p>Настоящие мужские игрушки</p>
-                                        <a class="arrow arrow-prev" href="#item-1"></a>
-                                        <a class="arrow arrow-next" href="#item-1"></a>
-                                        <a class="open-catalog" href="catalog.html">Открыть каталог</a>
-                                    </div>
-                                </div>
+                            <div class="item">
+                                <img src="img/slide-image.jpg" alt="Первый слайд">
+                                <div class="slideText">Дрели</div>
+                                <p class="slideDescription">Соседям на радость!</p>
+                                <a class="open-catalog" href="catalog.html">Открыть каталог</a>
                             </div>
+                            <div class="item">
+                                <img src="img/slide-image2.jpg" alt="Второй слайд">
+                                <div class="slideText">Перфораторы</div>
+                                <p class="slideDescription">Настоящие мужские игрушки</p>
+                                <a class="open-catalog" href="catalog.html">Открыть каталог</a>
+                            </div>
+                            <a class="prev" onclick="minusSlide()"></a>
+                            <a class="next" onclick="plusSlide()"></a>
                         </div>
                     </div>
                     <div class="right-colorful">
                         <ul>
                             <li class="newtech">
-                                <span>Техника</span>
+                                <span class="title-of-blocks">Техника</span>
                                 <a class="block" href="#">Для стройки</a>
                             </li>
                             <li class="newsales">
-                                <span>Скидки 50%</span>
+                                <span class="title-of-blocks">Скидки 50%</span>
                                 <a class="block" href="#">На 350 товаров</a>
                             </li>
                             <li class="newdelivery">
-                                <span>Доставка</span>
+                                <span class="title-of-blocks">Доставка</span>
                                 <a class="block" href="#">Бесплатно</a>
                             </li>
                         </ul>

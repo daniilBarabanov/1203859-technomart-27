@@ -498,7 +498,7 @@
         width: 940px;
     }
     
-    .colorful-div span {
+    .title-of-blocks {
         position: absolute;
         font-family: "Cuprum", "Arial", sans-serif;
         font-size: 24px;
@@ -602,32 +602,72 @@
         background-repeat: no-repeat;
         background-position: 0 0;
     }
+    /* Слайдер */
     
     .slider {
-        position: relative;
         width: 620px;
-        height: 266px;
+        max-height: 266px;
+        position: relative;
+        margin: auto;
         margin-top: 20px;
+        overflow: hidden;
+    }
+    /* Кнопки вперед и назад */
+    
+    .slider .prev {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 40px;
+        top: 114px;
+        left: 25px;
+        background-image: url('../img/icon-left.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
     }
     
-    .slider-drills {
+    .slider .next {
         position: absolute;
-        margin-top: 27px;
-        margin-bottom: 0px;
-        margin-left: 24px;
+        content: "";
+        width: 22px;
+        height: 40px;
+        top: 114px;
+        right: 20px;
+        background-image: url('../img/icon-right.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    /* Заголовок слайда */
+    
+    .item {
+        position: relative;
+    }
+    
+    .slideText {
+        position: absolute;
         width: auto;
-        height: 30px;
         font-family: 'Cuprum', "Arial", sans-serif;
         font-size: 36px;
         line-height: 36px;
         color: white;
+        left: 24px;
+        top: 27px;
+        text-transform: uppercase;
     }
     
-    .slider input[name="switch"] {
-        display: none;
+    .slideDescription {
+        position: absolute;
+        width: auto;
+        font-family: 'Cuprum', "Arial", sans-serif;
+        font-size: 18px;
+        color: white;
+        left: 24px;
+        top: 65px;
+        margin: 0;
     }
+    /* Круги */
     
-    .switch {
+    .slider-dots {
         display: flex;
         flex-direction: row;
         position: absolute;
@@ -638,7 +678,7 @@
         z-index: 5;
     }
     
-    .switch label {
+    .slider-dots_item {
         width: 6px;
         height: 6px;
         cursor: pointer;
@@ -649,48 +689,17 @@
         background-color: #ffffff;
     }
     
-    #btn1:checked~.switch label[for="btn1"] {
+    .active,
+    .slider-dots_item:hover {
         background-color: #ee3643;
     }
-    
-    #btn2:checked~.switch label[for="btn2"] {
-        background-color: #ee3643;
-    }
-    
-    .slider-inner {
-        overflow: hidden;
-    }
-    
-    .slides {
-        width: 300%;
-        transition: all 0.5s;
-    }
-    
-    .slides p {
-        position: absolute;
-        margin-top: 65px;
-        margin-bottom: 0px;
-        margin-left: 25px;
-        width: auto;
-        height: 17px;
-        font-family: 'Cuprum', "Arial", sans-serif;
-        font-size: 18px;
-        line-height: 24px;
-        color: white;
-    }
-    
-    .slides img {
-        width: 620px;
-        height: 266px;
-    }
+    /* открыть каталог */
     
     .open-catalog {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        margin-top: 206px;
-        margin-left: 25px;
         width: 195px;
         height: 38px;
         font-size: 14px;
@@ -698,6 +707,8 @@
         color: #ffffff;
         text-transform: uppercase;
         border-radius: 3px;
+        left: 25px;
+        top: -70px;
     }
     
     .open-catalog:hover {
@@ -707,84 +718,31 @@
     .open-catalog:active {
         background-color: #ba2732;
     }
+    /* Анимация слайдов */
     
-    #btn2:checked~.slides .slider-inner .item-1 {
-        transform: translate(0);
-        background-image: url('../img/slide-image2.jpg');
+    .slider .item {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1 s;
+        animation-name: fade;
+        animation-duration: 1 s;
     }
     
-    #btn2:checked~.slides .slider-inner .item-2 {
-        transform: translate(0);
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
     }
     
-    .carousel-item {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .arrow {
-        border: solid white;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 12px;
-    }
-    
-    .arrow-prev {
-        left: 25px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(135deg);
-    }
-    
-    .arrow-next {
-        right: 25px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(-45deg);
-    }
-    
-    #btn-1:checked~.right-slider #dada-1,
-    #btn-2:checked~.right-slider #dada-2 {
-        display: block;
-    }
-    /*Select every element*/
-    
-    [id^="item"] {
-        display: none;
-    }
-    
-    .item-1 {
-        z-index: 2;
-        opacity: 1;
-        background-image: url('../img/slide-image.jpg');
-    }
-    
-    .item-2 {
-        background-image: url('../img/slide-image2.jpg');
-    }
-    
-    *:target~.item-1 {
-        opacity: 0;
-    }
-    
-    #item-1:target~.item-1 {
-        opacity: 1;
-    }
-    
-    #item-2:target~.item-2,
-    #item-3:target~.item-3 {
-        z-index: 3;
-        opacity: 1;
-    }
-    
-    #btn1:checked~.right-slider #slide1,
-    #btn2:checked~.right-slider #slide2 {
-        display: block;
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
     }
     
     .right-colorful {
@@ -2410,7 +2368,8 @@
     }
     
     .special-drill-catalog h3 {
-        margin-bottom: 43px;
+        margin-bottom: 36px;
+        margin-top: 10px;
     }
     
     .items article:nth-of-type(3):after,
