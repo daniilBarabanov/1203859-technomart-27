@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/min-style.css" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <title>
@@ -34,7 +34,7 @@
                     </li>
                     <li>
                         <a class="tomakeanorder" href="#">
-                            <p>Оформить заказ</p>
+                            <p class="order-p">Оформить заказ</p>
                         </a>
                     </li>
                 </ul>
@@ -42,23 +42,26 @@
         </section>
         <section class="header-middle">
             <div class="container flex">
-                <h2 class="invisible">Контактная информация</h2>
-                <div class="header-info">
-                    <p>
-                        Интернет-магазин строительных материалов &nbsp; и инструментов для ремонта
-                    </p>
+                <h2 class="invisible">Контакты</h2>
+                <div class="info-title">
+                    <p>Интернет-магазин строительных материалов &ensp; и инструментов для ремонта</p>
                 </div>
-                <div class="header-numberadress">
+                <div class="contacts-title">
                     <div class="phone-container">
-                        <p class="number">
-                            +7(812)555-05-55</p>
+                        <p class="phone-number">+7 (812) 555-05-55</p>
                     </div>
-                    <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
-                <div class="enterRegistration">
-                    <a class="enter" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Войти
-                    </a>
-                    <a class="registration" href="#">Регистрация</a>
+                <div class="cite-login">
+                    <div class="cite-sign-in">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                    <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
+                    <path fill="#c5c5c5"
+                      d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+                  </svg>
+                        <a class="header-sign" href="#">Войти</a>
+                    </div>
+                    <a class="header-reg" href="#">Регистрация</a>
                 </div>
             </div>
         </section>
@@ -97,19 +100,19 @@
                         </ul>
                         <div class="slider">
                             <div class="slider-dots">
-                                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
-                                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                                <span class="slider-dots-item" onclick="currentSlide(1)"></span>
+                                <span class="slider-dots-item" onclick="currentSlide(2)"></span>
                             </div>
                             <div class="item">
-                                <img src="img/slide-image.jpg" alt="Первый слайд">
-                                <div class="slideText">Дрели</div>
-                                <p class="slideDescription">Соседям на радость!</p>
+                                <img src="img/slide-image.jpg" width="620px" height="266px" alt="Первый слайд">
+                                <div class="slide-text">Дрели</div>
+                                <p class="slide-description">Соседям на радость!</p>
                                 <a class="open-catalog" href="catalog.html">Открыть каталог</a>
                             </div>
                             <div class="item">
-                                <img src="img/slide-image2.jpg" alt="Второй слайд">
-                                <div class="slideText">Перфораторы</div>
-                                <p class="slideDescription">Настоящие мужские игрушки</p>
+                                <img src="img/slide-image2.jpg" width="620px" height="266px" alt="Второй слайд">
+                                <div class="slide-text">Перфораторы</div>
+                                <p class="slide-description">Настоящие мужские игрушки</p>
                                 <a class="open-catalog" href="catalog.html">Открыть каталог</a>
                             </div>
                             <a class="prev" onclick="minusSlide()"></a>
@@ -136,52 +139,58 @@
             </div>
         </section>
         <section class="catalog-items">
-            <h2 class="invisible">
-                Каталог популярных товаров
-            </h2>
+            <h2 class="invisible">Каталог некоторых товаров</h2>
             <div class="container">
-                <div class="popgoodsdiv">
-                    <span class="populargoods">Популярные товары:</span>
-                    <a class="popgoodshref" href="#">Все популярные товары</a>
+                <div class="header-of-popular">
+                    <span class="popular-items-h2">Популярные товары:</span>
+                    <a class="all-popular-items" href="#">Все популярные товары</a>
                 </div>
                 <div class="featured-items">
                     <article>
-                        <img src="img/item3.jpg" alt="Изображение перфоратора Bosch BFG 9000" width="218" height="170">
-                        <h3>Перфоратор BOSCH BFG 9000</h3>
-                        <del class="old-price">32500 P.</del>
-                        <span>25500 P.</span>
-                        <div class="small-popup">
-                            <a class="button-buy" href="#">Купить</a>
-                            <a class="button-book" href="#">В закладки</a>
+                        <div class="inside-items">
+                            <img src="img/item3.jpg" alt="Изображение перфоратора Bosch BFG 9000" width="218" height="170">
+                            <h3>Перфоратор BOSCH BFG 9000</h3>
+                            <del class="old-price">32500 P.</del>
+                            <span>25500 P.</span>
+                            <div class="small-popup">
+                                <a class="button-buy" href="#">Купить</a>
+                                <a class="button-book" href="#">В закладки</a>
+                            </div>
                         </div>
                     </article>
                     <article>
-                        <img src="img/item1.jpg" alt="Изображение перфоратора Bosch BFG 3000" width="218" height="170">
-                        <h3>Перфоратор BOSCH BFG 3000</h3>
-                        <del class="old-price">22500 P.</del>
-                        <span>15500 P.</span>
-                        <div class="small-popup">
-                            <a class="button-buy" href="#">Купить</a>
-                            <a class="button-book" href="#">В закладки</a>
+                        <div class="inside-items">
+                            <img src="img/item1.jpg" alt="Изображение перфоратора Bosch BFG 3000" width="218" height="170">
+                            <h3>Перфоратор BOSCH BFG 3000</h3>
+                            <del class="old-price">22500 P.</del>
+                            <span>15500 P.</span>
+                            <div class="small-popup">
+                                <a class="button-buy" href="#">Купить</a>
+                                <a class="button-book" href="#">В закладки</a>
+                            </div>
                         </div>
                     </article>
-                    <article class>
-                        <img src="img/item2.jpg" alt="Изображение перфоратора Bosch BFG 6000" width="218" height="170">
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <del class="old-price">30500 P.</del>
-                        <span>25500 P.</span>
-                        <div class="small-popup">
-                            <a class="button-buy" href="#">Купить</a>
-                            <a class="button-book" href="#">В закладки</a>
+                    <article>
+                        <div class="inside-items">
+                            <img src="img/item2.jpg" alt="Изображение перфоратора Bosch BFG 6000" width="218" height="170">
+                            <h3>Перфоратор BOSCH BFG 6000</h3>
+                            <del class="old-price">30500 P.</del>
+                            <span>25500 P.</span>
+                            <div class="small-popup">
+                                <a class="button-buy" href="#">Купить</a>
+                                <a class="button-book" href="#">В закладки</a>
+                            </div>
                         </div>
                     </article>
-                    <article class="special-drill">
-                        <img src="img/item1.jpg" alt="Изображение перфоратора Bosch BFG 2000" width="218" height="170">
-                        <h3>Перфоратор BOSCH BFG 2000</h3>
-                        <span>12500 P.</span>
-                        <div class="small-popup">
-                            <a class="button-buy" href="#">Купить</a>
-                            <a class="button-book" href="#">В закладки</a>
+                    <article>
+                        <div class="inside-items">
+                            <img src="img/item1.jpg" alt="Изображение перфоратора Bosch BFG 2000" width="218" height="170">
+                            <h3>Перфоратор BOSCH BFG 2000</h3>
+                            <span class="last-span">12500 P.</span>
+                            <div class="small-popup">
+                                <a class="button-buy" href="#">Купить</a>
+                                <a class="button-book" href="#">В закладки</a>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -196,42 +205,42 @@
                 </div>
                 <ul class="topmanufacturers">
                     <li>
-                        <a href="bosch.com">
+                        <a href="bosch.com" class="bosch">
                             <img src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
                         </a>
                     </li>
                     <li>
-                        <a href="makita.com">
+                        <a href="makita.com" class="makita">
                             <img src="img/makita.jpg" width="123" height="40" alt="Makita">
                         </a>
                     </li>
                     <li>
-                        <a href="dewalt.com">
+                        <a href="dewalt.com" class="dewalt">
                             <img src="img/de-walt.jpg" width="146" height="44" alt="DeWalt">
                         </a>
                     </li>
                     <li>
-                        <a href="interskol.ru">
+                        <a href="interskol.ru" class="interskol">
                             <img src="img/invalid-name.jpg" width="200" height="88" alt="Interskol">
                         </a>
                     </li>
                     <li>
-                        <a href="hitachi.com">
+                        <a href="hitachi.com" class="hitachi">
                             <img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi">
                         </a>
                     </li>
                     <li>
-                        <a href="lg.com">
+                        <a href="lg.com" class="lg">
                             <img src="img/lg.jpg" width="121" height="73" alt="LG">
                         </a>
                     </li>
                     <li>
-                        <a href="aeg.com">
+                        <a href="aeg.com" class="aeg">
                             <img src="img/aeg.jpg" width="151" height="96" alt="AEG">
                         </a>
                     </li>
                     <li>
-                        <a href="metabo.com">
+                        <a href="metabo.com" class="metabo">
                             <img src="img/metabo.jpg" width="204" height="69" alt="Metabo">
                         </a>
                     </li>
@@ -311,11 +320,11 @@
             <div class="container flex">
                 <h2 class="invisible">Верхняя часть футера</h2>
                 <div class="shit">
-                    <a class="techmart-logo-bottom" href="index.html"><img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
+                    <a class="techmart-logo-bottom" href="index.html"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт"></a>
                     <div class="adressnumber">
                         <p>
                             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                            <span class="numberfooter">+7(812)555-05-55</span>
+                            <span class="numberfooter">+7 (812) 555-05-55</span>
                         </p>
                     </div>
                 </div>
@@ -425,7 +434,7 @@
             <span class="invisible">Закрыть</span>
         </button>
     </section>
-    <script src="../1203859-technomart-27/js/script.js">
+    <script src="../1203859-technomart-27/js/min-script.js">
     </script>
 </body>
 
