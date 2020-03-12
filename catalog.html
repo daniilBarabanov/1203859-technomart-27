@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/min-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <title>
@@ -47,22 +47,23 @@
                 </div>
                 <div class="contacts-title">
                     <div class="phone-container">
-                        <p class="phone-number">+7 (812) 555-05-55</p>
+                        <a href="tel:+7(812)555-05-55" class="phone-number">+7 (812) 555-05-55</a>
                     </div>
                     <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <div class="user-block-profile">
-                    <a class="user-profile">Равшан Джамшутович</a>
+                    <article class="user-name">
+                        <a class="user-profile" tabindex="0">Равшан Джамшутович</a>
+                        <a href="#" class="user-logout" tabindex="0"></a>
+                    </article>
                     <article>
                         <h2 class="invisible">Блок с заказами и личным кабинетом</h2>
                         <div class="user-control">
-                            <a class="my-orders">Мои заказы</a>
+                            <a class="my-orders" tabindex="0">Мои заказы</a>
                             <span class="point"></span>
-                            <a class="my-profile">Личный кабинет</a>
+                            <a class="my-profile" tabindex="0">Личный кабинет</a>
                         </div>
-                    </article>
                 </div>
-            </div>
         </section>
         <section class="lower-header">
             <h2 class="invisible">
@@ -104,7 +105,7 @@
                         <span>Фильтр:</span>
                     </article>
                     <label class="filter-sort" for="min-price">Цена:</label>
-                    <form method="get" action="https://echo.htmlacademy.ru/%22%3E">
+                    <form method="get" action="https://echo.htmlacademy.ru/%22%3E" tabindex="0">
                         <fieldset class="filter-item">
                             <div class="range-filter">
                                 <div class="range-controls">
@@ -121,39 +122,37 @@
                                 </div>
                             </div>
                         </fieldset>
-                    </form>
-                    <hr class="line-1">
-                    <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
+                        <hr class="line-1">
                         <fieldset class="first-field">
                             <legend class="filter-sort">Производители:</legend>
                             <ul class="manufacturers">
                                 <li class="manufacturers-options">
                                     <input class="invisible filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
-                                    <label for="bosch">
+                                    <label for="bosch" tabindex="0">
               Bosch
               </label>
                                 </li>
                                 <li class="manufacturers-options">
                                     <input class="invisible filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
-                                    <label for="interskol">
+                                    <label for="interskol" tabindex="0">
               Интерскол
               </label>
                                 </li>
                                 <li class="manufacturers-options">
                                     <input class="invisible filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
-                                    <label for="makita">
+                                    <label for="makita" tabindex="0">
               Makita
               </label>
                                 </li>
                                 <li class="manufacturers-options">
                                     <input class="invisible filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
-                                    <label for="dewalt">
+                                    <label for="dewalt" tabindex="0">
               Dewalt
               </label>
                                 </li>
                                 <li class="manufacturers-options">
                                     <input class="invisible filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
-                                    <label for="hitachi">
+                                    <label for="hitachi" tabindex="0">
               Hitachi
               </label>
                                 </li>
@@ -165,13 +164,13 @@
                             <ul class="nutrition">
                                 <li class="manufacturers-options">
                                     <input class="invisible filter-input-radio" type="radio" name="pitanie" value="accum" id="accum" checked>
-                                    <label for="accum">
+                                    <label for="accum" tabindex="0">
               Аккумуляторные
               </label>
                                 </li>
                                 <li class="manufacturers-options">
                                     <input class="invisible filter-input-radio" type="radio" name="pitanie" value="net" id="net">
-                                    <label for="net">
+                                    <label for="net" tabindex="0">
               Сетевые
               </label>
                                 </li>
@@ -220,7 +219,7 @@
                                 <a class="button-book" href="#">В закладки</a>
                             </div>
                         </article>
-                        <article class="special-drill-catalog">
+                        <article class="special-drill-catalog new-item">
                             <img src="img/item1.jpg" alt="Изображение перфоратора Bosch BFG 2000" width="218" height="170">
                             <h3>Перфоратор BOSCH BFG 2000</h3>
                             <del class="old-price-hidden">22500 P.</del>
@@ -240,7 +239,7 @@
                                 <a class="button-book" href="#">В закладки</a>
                             </div>
                         </article>
-                        <article>
+                        <article class="new-item">
                             <img src="img/item2.jpg" alt="Изображение перфоратора Bosch BFG 6000" width="218" height="170">
                             <h3>Перфоратор BOSCH BFG 6000</h3>
                             <del class="old-price">30500 P.</del>
@@ -260,7 +259,7 @@
                                 <a class="button-book" href="#">В закладки</a>
                             </div>
                         </article>
-                        <article>
+                        <article class="new-item">
                             <img src="img/item1.jpg" alt="Изображение перфоратора Bosch BFG 3000" width="218" height="170">
                             <h3>Перфоратор BOSCH BFG 3000</h3>
                             <del class="old-price">22500 P.</del>
@@ -317,11 +316,11 @@
             <div class="container flex">
                 <h2 class="invisible">Верхняя часть футера</h2>
                 <div class="shit">
-                    <a class="techmart-logo-bottom" href="index.html"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт"></a>
+                    <a class="techmart-logo-bottom" href="index.html"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт" tabindex="0"></a>
                     <div class="adressnumber">
                         <p>
                             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                            <span class="numberfooter">+7 (812) 555-05-55</span>
+                            <a href="tel:+7(812)555-05-55" class="numberfooter">+7 (812) 555-05-55</a>
                         </p>
                     </div>
                 </div>
@@ -389,7 +388,7 @@
             <span class="invisible">Закрыть</span>
         </button>
     </section>
-    <script src="../1203859-technomart-27/js/min-script-2.js">
+    <script src="js/min-script-2.js">
     </script>
 </body>
 

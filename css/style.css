@@ -335,6 +335,9 @@ a {
 }
 
 .contacts-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     width: 270px;
     min-height: 68px;
@@ -353,13 +356,15 @@ a {
 }
 
 .phone-number {
+    display: flex;
+    align-items: center;
     position: relative;
     font-size: 21px;
     color: #ee3643;
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 21px;
-    padding-left: 71px;
     padding-top: 14px;
+    padding-left: 71px;
     padding-bottom: 12px;
 }
 
@@ -476,6 +481,11 @@ a {
     opacity: 0.4;
 }
 
+.user-name {
+    width: 299px;
+    min-height: 45px;
+}
+
 
 /*Оформление нижней части шапки*/
 
@@ -485,9 +495,11 @@ a {
 }
 
 .header-bottom {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     border-bottom: 5px solid #293449;
-    height: 55px;
+    min-height: 55px;
     font-size: 17px;
     color: white;
     background-color: #32425c;
@@ -496,6 +508,7 @@ a {
 .navigation {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
@@ -970,7 +983,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 218px;
-    height: 320px;
+    min-height: 320px;
     border: solid 1px #eaeaea;
     margin-right: 20px;
 }
@@ -1116,19 +1129,6 @@ a {
 
 .featured-items article:hover .small-popup {
     display: block;
-}
-
-.featured-items article:nth-child(4n)::after {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 59px;
-    top: 0px;
-    left: 159px;
-    background-image: url('../img/new-flag.png');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    z-index: 100;
 }
 
 
@@ -1680,6 +1680,11 @@ ul .metabo {
     min-height: 84px;
 }
 
+.adressnumber a {
+    text-decoration: none;
+    color: white;
+}
+
 .navigation-footer {
     width: 479px;
 }
@@ -1912,7 +1917,7 @@ ul .metabo {
     cursor: pointer;
 }
 
-.user-profile::after {
+.user-logout::after {
     position: absolute;
     content: '';
     top: 16px;
@@ -1923,7 +1928,7 @@ ul .metabo {
     cursor: pointer;
 }
 
-.user-profile:hover::after {
+.user-logout:hover::after {
     position: absolute;
     content: '';
     top: 16px;
@@ -2061,8 +2066,9 @@ ul .metabo {
 
 .perf-h {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    height: 89px;
+    min-height: 89px;
     margin-top: 21px;
     background-color: #f2f6f8;
 }
@@ -2138,6 +2144,9 @@ article.filter-first {
 }
 
 .second-field {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
     margin-bottom: 80px;
 }
 
@@ -2242,6 +2251,11 @@ article.filter-first {
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 1;
+}
+
+.filter-input-radio:disabled+label,
+.filter-input-checkbox:disabled+label {
+    opacity: 0.3;
 }
 
 .price {
@@ -2406,7 +2420,11 @@ fieldset {
 }
 
 .first-field {
+    margin: 0;
     margin-bottom: 21px;
+    padding: 0;
+    border: 0 none;
+    margin-top: 16px;
 }
 
 .line-1 {
@@ -2520,7 +2538,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     width: 218px;
-    height: 316px;
+    min-height: 316px;
     border: solid 1px #eaeaea;
     margin-right: 20px;
     margin-top: 18px;
@@ -2615,9 +2633,7 @@ article.special-drill-catalog {
     margin-right: 0px;
 }
 
-.items article:nth-of-type(3):after,
-.items article:nth-of-type(5):after,
-.items article:nth-of-type(7):after {
+.new-item::after {
     position: absolute;
     content: "";
     width: 60px;

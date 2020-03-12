@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/min-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <title>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="contacts-title">
                     <div class="phone-container">
-                        <p class="phone-number">+7 (812) 555-05-55</p>
+                        <a href="tel:+7(812)555-05-55" class="phone-number">+7 (812) 555-05-55</a>
                     </div>
                     <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
@@ -138,9 +138,6 @@
                 </div>
             </div>
         </section>
-        <!--
-            ++++
-        -->
         <section class="catalog-items">
             <h2 class="invisible">Каталог некоторых товаров</h2>
             <div class="container">
@@ -185,7 +182,7 @@
                             </div>
                         </div>
                     </article>
-                    <article>
+                    <article class="new-item">
                         <div class="inside-items">
                             <img src="img/item1.jpg" alt="Изображение перфоратора Bosch BFG 2000" width="218" height="170">
                             <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -208,7 +205,7 @@
                 </div>
                 <ul class="topmanufacturers">
                     <li>
-                        <a href="bosch.com" class="bosch">
+                        <a href="bosch.com" class="bosch" tabindex="0">
                             <img src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
                         </a>
                     </li>
@@ -312,8 +309,8 @@
                 <p>
                     Вы можете забрать товар сами, заехав в наш офис:
                 </p>
-                <a class="route" href="#"><img src="img/map.jpg" width="300" height="158" alt="Как к нам проехать"></a>
-                <a class="write-us" href="#">Заблудились? Напишите нам!</a>
+                <a class="route" href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/data=!4m2!3m1!1s0x4696310fca5ba729:0xea9c53d4493c879f?sa=X&ved=2ahUKEwis8-vp5pXoAhUR0aYKHV5EB5QQ8gEwAHoECAsQAQ"><img src="img/map.jpg" width="300" height="158" alt="Как к нам проехать"></a>
+                <a class="write-us" href="form.html">Заблудились? Напишите нам!</a>
             </section>
         </div>
 
@@ -327,7 +324,7 @@
                     <div class="adressnumber">
                         <p>
                             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                            <span class="numberfooter">+7 (812) 555-05-55</span>
+                            <a href="tel:+7(812)555-05-55" class="numberfooter">+7 (812) 555-05-55</a>
                         </p>
                     </div>
                 </div>
@@ -357,13 +354,13 @@
                 <div class="social">
                     <ul>
                         <li>
-                            <a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+                            <a href="#" alt="Переход во Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a>
+                            <a href="#" alt="Переход в Facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a>
+                            <a href="#" alt="Переход Instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a>
                         </li>
                     </ul>
                 </div>
@@ -374,7 +371,7 @@
                     </p>
                     <p class="developed">
                         Разработано -
-                        <a href="htmlacademy.ru" class="developedyellow">htmlacademy.ru</a>
+                        <a href="mailto:htmlacademy.ru" class="developedyellow">htmlacademy.ru</a>
                     </p>
                 </div>
             </div>
@@ -437,7 +434,7 @@
             <span class="invisible">Закрыть</span>
         </button>
     </section>
-    <script src="../1203859-technomart-27/js/min-script.js">
+    <script src="js/min-script.js">
     </script>
 </body>
 
