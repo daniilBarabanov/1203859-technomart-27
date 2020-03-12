@@ -307,7 +307,12 @@ a {
     background-color: #f4f7f9;
     min-height: 158px;
     align-items: center;
-    height: 100px;
+}
+
+.header-middle:after {
+    content: '';
+    min-height: inherit;
+    font-size: 0;
 }
 
 .info-title {
@@ -319,10 +324,10 @@ a {
     line-height: 23px;
     color: #ee3643;
     width: 198px;
-    height: 60px;
+    min-height: 60px;
     margin-left: 53px;
     text-align: left;
-    padding-top: 9px;
+    padding-top: 11px;
 }
 
 .info-title p {
@@ -330,10 +335,11 @@ a {
 }
 
 .contacts-title {
-    position: absolute;
+    position: relative;
     width: 270px;
-    height: 68px;
-    margin-left: 320px;
+    min-height: 68px;
+    margin-left: 70px;
+    padding-top: 5px;
 }
 
 .contacts-title p {
@@ -353,9 +359,8 @@ a {
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 21px;
     padding-left: 71px;
-    padding-top: 10px;
+    padding-top: 14px;
     padding-bottom: 12px;
-    ;
 }
 
 .phone-number::before {
@@ -375,11 +380,11 @@ a {
     color: #32425c;
     line-height: 24px;
     padding-left: 9px;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 .cite-login {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,7 +393,8 @@ a {
     line-height: 21px;
     width: 281px;
     height: 45px;
-    margin-left: 659px;
+    margin-left: 68px;
+    margin-top: 5px;
 }
 
 .cite-sign-in {
@@ -426,6 +432,14 @@ a {
     color: #ee3643;
 }
 
+.cite-sign-in:active path {
+    fill: rgba(0, 0, 0, 0.3)
+}
+
+.header-sign:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .header-reg {
     display: flex;
     justify-content: center;
@@ -442,15 +456,24 @@ a {
     color: #ee3643;
 }
 
+.header-reg:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .user-block-profile {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 641px;
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 .user-block-profile article {
     display: flex;
+}
+
+.cite-sign-in:active {
+    opacity: 0.4;
 }
 
 
@@ -506,7 +529,7 @@ a {
     background-color: #1d2739;
 }
 
-.header-bottom li:active a {
+.header-bottom a:active {
     opacity: 0.5;
 }
 
@@ -1283,6 +1306,7 @@ ul .metabo {
 
 .services-toggle label {
     display: inline-block;
+    vertical-align: auto;
     width: 218px;
     padding: 18px 0 16px 22px;
     font-size: 21px;
@@ -1857,9 +1881,9 @@ ul .metabo {
     text-align: left;
     color: #000000;
     padding-left: 47px;
-    padding-right: 67px;
+    padding-right: 64px;
     cursor: pointer;
-    padding-top: 14px;
+    padding-top: 15px;
     padding-bottom: 11px;
     background-color: #ffffff;
 }
@@ -1933,6 +1957,7 @@ ul .metabo {
 
 .point {
     display: inline-block;
+    vertical-align: auto;
     width: 5px;
     height: 5px;
     margin-left: 12px;
